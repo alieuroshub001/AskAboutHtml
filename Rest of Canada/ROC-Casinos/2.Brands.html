@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC Casino Cards Grid</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-rccas-cards-section {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #e8edf5, #111b2e, #0b1120);
+            padding: 5rem 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        .aag-rccas-cards-section *,
+        .aag-rccas-cards-section *::before,
+        .aag-rccas-cards-section *::after {
+            box-sizing: border-box;
+        }
+
+        .aag-rccas-cards-container {
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccas-cards-container {
+                padding: 0 1.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rccas-cards-container {
+                padding: 0 2rem;
+            }
+        }
+
+        .aag-rccas-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .aag-rccas-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rccas-cards-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Card */
+        .aag-rccas-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            background-color: #0d1526;
+            border: 1px solid #1e293b;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .aag-rccas-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 20px 40px -15px rgba(220, 38, 38, 0.2);
+        }
+
+        .aag-rccas-card:hover .aag-rccas-card-glow {
+            opacity: 1;
+        }
+
+        .aag-rccas-card:hover .aag-rccas-card-name {
+            color: #dc2626 !important;
+        }
+
+        /* Banner */
+        .aag-rccas-card-banner {
+            position: relative;
+            display: flex;
+            height: 12rem;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(to bottom right, #0b1120, #111b2e);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .aag-rccas-card-glow {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(220, 38, 38, 0.2);
+            filter: blur(100px);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .aag-rccas-card-rank {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: flex;
+            height: 2.5rem;
+            width: 2.5rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            background-color: #ffffff;
+            font-size: 1.125rem;
+            font-weight: 900;
+            color: #0b1120 !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .aag-rccas-card-logo-wrap {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0.75rem;
+            display: flex;
+            height: 5rem;
+            width: 75%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            padding: 0.75rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .aag-rccas-card-logo-wrap img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .aag-rccas-card-name {
+            position: relative;
+            z-index: 1;
+            font-size: 1.25rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        .aag-rccas-card-name-large {
+            font-size: 1.875rem !important;
+        }
+
+        /* Body */
+        .aag-rccas-card-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccas-card-body {
+                padding: 2rem;
+            }
+        }
+
+        .aag-rccas-card-main {
+            flex: 1;
+        }
+
+        .aag-rccas-card-tagline {
+            font-size: 0.875rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+            line-height: 1.625;
+            margin: 0 0 1.5rem 0;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 1.5rem;
+        }
+
+        .aag-rccas-card-highlights-label {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ffffff !important;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .aag-rccas-card-list {
+            list-style: none;
+            margin: 0 0 2rem 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .aag-rccas-card-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.875rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rccas-card-check {
+            flex-shrink: 0;
+            height: 1.25rem;
+            width: 1.25rem;
+            color: #dc2626;
+        }
+
+        .aag-rccas-card-list-text {
+            flex: 1;
+            overflow-wrap: break-word;
+        }
+
+        /* Footer */
+        .aag-rccas-card-btn-group {
+            display: flex;
+            width: 100%;
+            gap: 0.75rem;
+        }
+
+        .aag-rccas-card-btn {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 1rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+        }
+
+        .aag-rccas-card-btn:hover {
+            background-color: #ef4444;
+        }
+
+        .aag-rccas-card-btn-outline {
+            background-color: transparent;
+            border: 1px solid #dc2626;
+            color: #dc2626 !important;
+            box-shadow: none;
+        }
+
+        .aag-rccas-card-btn-outline:hover {
+            background-color: rgba(220, 38, 38, 0.1);
+            color: #ef4444 !important;
+        }
+
+        .aag-rccas-card-disclaimer {
+            margin-top: 0.75rem;
+            text-align: center;
+            font-size: 10px !important;
+            color: #94a3b8 !important;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="aag-rccas-cards-section">
+        <div class="aag-rccas-cards-container">
+            <div class="aag-rccas-cards-grid">
+
+                <!-- Card: PlayOJO -->
+                <article class="aag-rccas-card">
+                    <div class="aag-rccas-card-banner">
+                        <div class="aag-rccas-card-glow"></div>
+                        <div class="aag-rccas-card-rank">#1</div>
+                        <div class="aag-rccas-card-logo-wrap">
+                            <img src="https://askaboutgaming.ca/wp-content/uploads/2026/07/10404ef02f.webp"
+                                alt="PlayOJO Logo" />
+                        </div>
+                        <h3 class="aag-rccas-card-name">PlayOJO</h3>
+                    </div>
+                    <div class="aag-rccas-card-body">
+                        <div class="aag-rccas-card-main">
+                            <p class="aag-rccas-card-tagline">Large Exclusive Slots Library, World-Class App.</p>
+                            <span class="aag-rccas-card-highlights-label">Top Highlights</span>
+                            <ul class="aag-rccas-card-list">
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Accepts PayPal & Interac</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Exclusive Slot Games</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Wide Selection of Roulette Games</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="aag-rccas-card-btn-group">
+                                <a href="/casinos-in-rest-of-canada/playojo-casino-roc/"
+                                    class="aag-rccas-card-btn">Review</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="aag-rccas-card-btn aag-rccas-card-btn-outline">View Site</a>
+                            </div>
+                            <div class="aag-rccas-card-disclaimer">19+ Play Responsibly</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Tonybet -->
+                <article class="aag-rccas-card">
+                    <div class="aag-rccas-card-banner">
+                        <div class="aag-rccas-card-glow"></div>
+                        <div class="aag-rccas-card-rank">#2</div>
+                        <div class="aag-rccas-card-logo-wrap">
+                            <img src="https://askaboutgaming.ca/wp-content/uploads/2026/07/4bcce1a4c8.webp"
+                                alt="PlayOJO Logo" />
+                        </div>
+                        <h3 class="aag-rccas-card-name aag-rccas-card-name-large">Tonybet</h3>
+                    </div>
+                    <div class="aag-rccas-card-body">
+                        <div class="aag-rccas-card-main">
+                            <p class="aag-rccas-card-tagline">Global Betting Brand, Built for Canadian Bettors.</p>
+                            <span class="aag-rccas-card-highlights-label">Top Highlights</span>
+                            <ul class="aag-rccas-card-list">
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Wide Sports Market Coverage</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Competitive Odds</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Fast Payouts</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="aag-rccas-card-btn-group">
+                                <a href="/casinos-in-rest-of-canada/tonybet-casino-roc/"
+                                    class="aag-rccas-card-btn">Review</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="aag-rccas-card-btn aag-rccas-card-btn-outline">View Site</a>
+                            </div>
+                            <div class="aag-rccas-card-disclaimer">19+ Play Responsibly</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Tooniebet -->
+                <article class="aag-rccas-card">
+                    <div class="aag-rccas-card-banner">
+                        <div class="aag-rccas-card-glow"></div>
+                        <div class="aag-rccas-card-rank">#3</div>
+                        <div class="aag-rccas-card-logo-wrap">
+                            <img src="https://askaboutgaming.ca/wp-content/uploads/2026/08/LOGO20TOONIEBET20v1201_black_TNIE-scaled.png"
+                                alt="Tooniebet Logo" />
+                        </div>
+                        <h3 class="aag-rccas-card-name">Tooniebet</h3>
+                    </div>
+                    <div class="aag-rccas-card-body">
+                        <div class="aag-rccas-card-main">
+                            <p class="aag-rccas-card-tagline">AGCO Licensed with 3,300+ Games & 24/7 Support.</p>
+                            <span class="aag-rccas-card-highlights-label">Top Highlights</span>
+                            <ul class="aag-rccas-card-list">
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">AGCO Licensed</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">3,300+ Games</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">24/7 Phone Support</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Sports Betting & Casino</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="aag-rccas-card-btn-group">
+                                <a href="/casinos-in-rest-of-canada/tooniebet-casino-roc/"
+                                    class="aag-rccas-card-btn">Review</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="aag-rccas-card-btn aag-rccas-card-btn-outline">View Site</a>
+                            </div>
+                            <div class="aag-rccas-card-disclaimer">19+ Play Responsibly</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Fastpay Casino -->
+                <article class="aag-rccas-card">
+                    <div class="aag-rccas-card-banner">
+                        <div class="aag-rccas-card-glow"></div>
+                        <div class="aag-rccas-card-rank">#4</div>
+                        <h3 class="aag-rccas-card-name aag-rccas-card-name-large">Fastpay Casino</h3>
+                    </div>
+                    <div class="aag-rccas-card-body">
+                        <div class="aag-rccas-card-main">
+                            <p class="aag-rccas-card-tagline">Instant payouts and a massive game library.</p>
+                            <span class="aag-rccas-card-highlights-label">Top Highlights</span>
+                            <ul class="aag-rccas-card-list">
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Instant Withdrawals</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Cryptocurrency Supported</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Huge Slots Selection</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="aag-rccas-card-btn-group">
+                                <a href="/casinos-in-rest-of-canada/fastpay-casino-roc/"
+                                    class="aag-rccas-card-btn">Review</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="aag-rccas-card-btn aag-rccas-card-btn-outline">View Site</a>
+                            </div>
+                            <div class="aag-rccas-card-disclaimer">19+ Play Responsibly</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Fair Crown Casino -->
+                <article class="aag-rccas-card">
+                    <div class="aag-rccas-card-banner">
+                        <div class="aag-rccas-card-glow"></div>
+                        <div class="aag-rccas-card-rank">#5</div>
+                        <h3 class="aag-rccas-card-name aag-rccas-card-name-large">Fair Crown Casino</h3>
+                    </div>
+                    <div class="aag-rccas-card-body">
+                        <div class="aag-rccas-card-main">
+                            <p class="aag-rccas-card-tagline">Premium casino experience with fair play.</p>
+                            <span class="aag-rccas-card-highlights-label">Top Highlights</span>
+                            <ul class="aag-rccas-card-list">
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">VIP Program</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">Live Dealer Games</span>
+                                </li>
+                                <li class="aag-rccas-card-list-item">
+                                    <svg class="aag-rccas-card-check" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="aag-rccas-card-list-text">High Limit Tables</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="aag-rccas-card-btn-group">
+                                <a href="/casinos-in-rest-of-canada/fair-crown-casino-roc/"
+                                    class="aag-rccas-card-btn">Review</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="aag-rccas-card-btn aag-rccas-card-btn-outline">View Site</a>
+                            </div>
+                            <div class="aag-rccas-card-disclaimer">19+ Play Responsibly</div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

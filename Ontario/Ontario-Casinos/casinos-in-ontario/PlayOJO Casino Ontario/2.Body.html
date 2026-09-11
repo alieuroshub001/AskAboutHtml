@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayOJO Full Review</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-crev-toc,
+        .aag-crev-section {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        .aag-crev-toc *,
+        .aag-crev-toc *::before,
+        .aag-crev-toc *::after,
+        .aag-crev-section *,
+        .aag-crev-section *::before,
+        .aag-crev-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* Sticky TOC */
+        .aag-crev-toc {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            border-bottom: 1px solid #1e293b;
+            background: rgba(11, 17, 32, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .aag-crev-toc-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .aag-crev-toc-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .aag-crev-toc-pill {
+            flex-shrink: 0;
+            white-space: nowrap;
+            border: 1px solid #1e293b;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .aag-crev-toc-pill:hover {
+            border-color: #dc2626;
+            color: #ffffff !important;
+        }
+
+        /* Section wrapper */
+        .aag-crev-section {
+            background-color: #0b1120;
+            padding: 3rem 0 5rem;
+            color: #ffffff;
+        }
+
+        .aag-crev-container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .aag-crev-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-crev-grid {
+                grid-template-columns: 1fr 320px;
+                gap: 2.5rem;
+            }
+        }
+
+        .aag-crev-main {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            min-width: 0;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-crev-main {
+                order: 1;
+            }
+        }
+
+        .aag-crev-sidebar-col {
+            order: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-crev-sidebar-col {
+                order: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-crev-sidebar-sticky {
+                position: sticky;
+                top: 6rem;
+            }
+        }
+
+        /* Card */
+        .aag-crev-card {
+            scroll-margin-top: 5rem;
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+        }
+
+        .aag-crev-proscons {
+            scroll-margin-top: 5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-card {
+                padding: 2rem;
+            }
+        }
+
+        .aag-crev-card p {
+            color: #94a3b8 !important;
+            line-height: 1.625;
+            margin: 0 0 1rem 0;
+            font-size: 1rem !important;
+        }
+
+        .aag-crev-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .aag-crev-overview p.aag-crev-lead {
+            font-size: 1.125rem !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .aag-crev-features-title {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-features-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        /* Section heading with icon */
+        .aag-crev-sec-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-crev-sec-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-crev-sec-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-crev-sec-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-sec-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-crev-sec-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Checklist */
+        .aag-crev-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-crev-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-crev-check {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-crev-check svg {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        /* Subheading pill */
+        .aag-crev-subhead {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 9999px;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 1rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        .aag-crev-subhead-dot {
+            width: 0.375rem;
+            height: 0.375rem;
+            border-radius: 9999px;
+            background-color: #dc2626;
+        }
+
+        /* Pros & Cons */
+        .aag-crev-proscons {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .aag-crev-proscons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-crev-pros {
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-crev-cons {
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-crev-pc-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-pc-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-crev-pc-title.aag-crev-pros-text {
+            color: #2563eb !important;
+        }
+
+        .aag-crev-pc-title.aag-crev-cons-text {
+            color: #dc2626 !important;
+        }
+
+        .aag-crev-pc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+
+        .aag-crev-pc-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #ffffff !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-crev-pc-dot {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-crev-pc-dot svg {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+
+        .aag-crev-pc-dot.aag-crev-pros-dot {
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+
+        .aag-crev-pc-dot.aag-crev-cons-dot {
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+        }
+
+        /* Verdict */
+        .aag-crev-verdict {
+            border-color: rgba(220, 38, 38, 0.3);
+            background: linear-gradient(to bottom right, #111b2e, #0d1526);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-verdict {
+                padding: 2.5rem;
+            }
+        }
+
+        .aag-crev-verdict-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-crev-verdict-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-crev-verdict-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-crev-verdict-eyebrow {
+            display: block;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #dc2626 !important;
+        }
+
+        .aag-crev-verdict-title {
+            margin: 0.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-verdict-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-crev-cta {
+            margin-top: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 1rem 2rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-crev-cta:hover {
+            background-color: #ef4444;
+            transform: scale(1.05);
+        }
+
+        .aag-crev-cta svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-crev-cta-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .aag-crev-cta-center .aag-crev-cta {
+            margin-top: 0;
+            width: 100%;
+            max-width: 16rem;
+            justify-content: center;
+        }
+
+        /* Sidebar */
+        .aag-crev-sidebar {
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 640px) {
+            .aag-crev-sidebar {
+                padding: 1.75rem;
+            }
+        }
+
+        .aag-crev-rank-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            background-color: rgba(220, 38, 38, 0.15);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ef4444 !important;
+        }
+
+        .aag-crev-logo-box {
+            margin: 1.25rem auto 0;
+            display: flex;
+            height: 5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-crev-logo-box img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .aag-crev-sb-name {
+            margin: 1.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+        }
+
+        .aag-crev-sb-tagline {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.875rem !important;
+            line-height: 1.625;
+            color: #94a3b8 !important;
+        }
+
+        .aag-crev-sb-cta {
+            margin-top: 1.25rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 0.875rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-crev-sb-cta:hover {
+            background-color: #ef4444;
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.25);
+        }
+
+        .aag-crev-sb-disclaimer {
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+            font-size: 10px !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-crev-sb-stats {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .aag-crev-sb-stat-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .aag-crev-sb-stat-label {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+        }
+
+        .aag-crev-sb-stat-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-crev-sb-stat-icon svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-crev-sb-stat-label span {
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+        }
+
+        .aag-crev-sb-stat-value {
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-crev-sb-payments {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+        }
+
+        .aag-crev-sb-payments-label {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-crev-payment-pills {
+            margin-top: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .aag-crev-payment-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Table of Contents -->
+    <section class="aag-crev-toc">
+        <div class="aag-crev-toc-inner">
+            <a href="#overview" class="aag-crev-toc-pill">Overview</a>
+            <a href="#is-playojo-legal-in-ontario" class="aag-crev-toc-pill">Is PlayOJO Legal in Ontario?</a>
+            <a href="#playojo-casino-game-selection" class="aag-crev-toc-pill">PlayOJO Casino Game Selection</a>
+            <a href="#playojo-online-slots-review" class="aag-crev-toc-pill">PlayOJO Online Slots Review</a>
+            <a href="#playojo-live-casino-review" class="aag-crev-toc-pill">PlayOJO Live Casino Review</a>
+            <a href="#table-games-at-playojo" class="aag-crev-toc-pill">Table Games at PlayOJO</a>
+            <a href="#mobile-casino-experience" class="aag-crev-toc-pill">Mobile Casino Experience</a>
+            <a href="#deposits-and-withdrawals" class="aag-crev-toc-pill">Deposits and Withdrawals</a>
+            <a href="#playojo-promotions-and-bonuses" class="aag-crev-toc-pill">PlayOJO Promotions and Bonuses</a>
+            <a href="#user-experience-and-interface" class="aag-crev-toc-pill">User Experience and Interface</a>
+            <a href="#security-and-responsible-gambling" class="aag-crev-toc-pill">Security and Responsible Gambling</a>
+            <a href="#pros-and-cons" class="aag-crev-toc-pill">Pros &amp; Cons</a>
+            <a href="#verdict" class="aag-crev-toc-pill">Verdict</a>
+        </div>
+    </section>
+
+    <!-- Review Content + Sidebar -->
+    <section class="aag-crev-section">
+        <div class="aag-crev-container">
+            <!-- View Website CTA -->
+            <div class="aag-crev-cta-center">
+                <a href="#" class="aag-crev-cta">
+                    View Website
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="aag-crev-container aag-crev-grid">
+
+            <!-- Main article column -->
+            <div class="aag-crev-main">
+
+                <!-- Why Players Choose -->
+                <div class="aag-crev-card">
+                    <h3 class="aag-crev-features-title">Why Players Choose PlayOJO</h3>
+                    <ul class="aag-crev-list">
+                        <li class="aag-crev-list-item">
+                            <span class="aag-crev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Accepts PayPal &amp; Interac</span>
+                        </li>
+                        <li class="aag-crev-list-item">
+                            <span class="aag-crev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Exclusive Slot Games</span>
+                        </li>
+                        <li class="aag-crev-list-item">
+                            <span class="aag-crev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Wide Selection of Roulette Games</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Overview -->
+                <div id="overview" class="aag-crev-card aag-crev-overview">
+                    <p class="aag-crev-lead">If you are searching for a detailed <strong>PlayOJO online casino review
+                            Ontario</strong> players can rely on, this guide covers everything you need to know before
+                        choosing this casino platform. Since Ontario launched its regulated online gaming market,
+                        players have gained access to a wide range of licensed operators offering online slots, table
+                        games, live casino entertainment, and mobile gaming.</p>
+                    <p>In this <strong>best casino review</strong>, we examine PlayOJO's game selection, online slots,
+                        table games, promotions, mobile experience, banking options, security, responsible gambling
+                        features, and overall value to determine whether PlayOJO deserves consideration among the
+                        <strong>best online casino</strong> options available to Ontario players.</p>
+                    <p>For casino enthusiasts looking for the <strong>best Ontario casino online</strong>, PlayOJO has
+                        built a reputation around transparency, fair play, and a player-friendly approach that focuses
+                        on entertainment rather than complicated bonus requirements.</p>
+                </div>
+
+                <!-- Is PlayOJO Legal in Ontario? -->
+                <div id="is-playojo-legal-in-ontario" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">Is PlayOJO Legal in Ontario?</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>Yes. PlayOJO operates within Ontario's regulated online gaming market and provides players
+                            with a secure environment for online casino gaming.</p>
+                        <p>Ontario's regulated market was introduced to provide players with access to licensed online
+                            casinos that meet strict requirements for:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Player security</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Fair gaming practices</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Responsible gambling</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Payment protection</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Data privacy</span></li>
+                        </ul>
+                        <p>When selecting the <strong>best online casino</strong>, regulation should always be one of
+                            the most important factors. Choosing a licensed Ontario operator gives players additional
+                            confidence that games are monitored and that the platform follows provincial standards.</p>
+                    </div>
+                </div>
+
+                <!-- PlayOJO Casino Game Selection -->
+                <div id="playojo-casino-game-selection" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                <path stroke-linecap="round" d="M12 11v5" />
+                                <circle cx="12" cy="8" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">PlayOJO Casino Game Selection</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>A major factor in any <strong>best casino review</strong> is the quality and variety of
+                            available games.</p>
+                        <p>PlayOJO offers a diverse casino library featuring hundreds of titles across multiple
+                            categories, including:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Online slots</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Progressive jackpot games</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Classic casino games</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Blackjack</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Roulette</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Baccarat</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Video poker</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Live dealer casino games</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Instant win games</span></li>
+                        </ul>
+                        <p>The casino works with many well-known software providers, helping deliver a broad selection
+                            of gaming experiences.</p>
+                        <p>Popular providers found across online casino platforms like PlayOJO include:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>NetEnt</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Microgaming</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Pragmatic Play</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Play'n GO</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Evolution</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Red Tiger</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Yggdrasil</span></li>
+                        </ul>
+                        <p>This variety allows players to explore different styles of casino games, whether they enjoy
+                            traditional table games or modern video slots with advanced bonus features.</p>
+                    </div>
+                </div>
+
+                <!-- PlayOJO Online Slots Review -->
+                <div id="playojo-online-slots-review" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3.5" y="4.5" width="17" height="15" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 4.5v15M15.5 4.5v15" />
+                                <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                <circle cx="12" cy="14" r="1" fill="currentColor" stroke="none" />
+                                <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">PlayOJO Online Slots Review</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>Slots are the foundation of most online casinos, and PlayOJO provides a strong selection of
+                            slot games for Ontario players.</p>
+                        <p>The platform features:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Classic three-reel slots</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Video slots</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Progressive jackpots</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Bonus-round games</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Megaways-style slots</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>High-volatility slots</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Low-stakes slots</span></li>
+                        </ul>
+                        <p>Many modern slot games include features such as:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Free spins</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Wild symbols</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Multipliers</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Expanding reels</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Bonus mini-games</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Progressive jackpots</span></li>
+                        </ul>
+                        <p>Players looking for the <strong>best online casino</strong> experience often prioritize slot
+                            variety, and PlayOJO performs well by offering a large collection of games across different
+                            themes and gameplay styles.</p>
+                        <p>Whether you enjoy adventure-themed slots, traditional fruit machines, or high-action video
+                            slots, PlayOJO provides plenty of choices.</p>
+                    </div>
+                </div>
+
+                <!-- PlayOJO Live Casino Review -->
+                <div id="playojo-live-casino-review" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.3 9.3l4.4 2.7-4.4 2.7V9.3z"
+                                    fill="currentColor" stroke="none" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">PlayOJO Live Casino Review</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>Live casino has become one of the fastest-growing categories in online gambling.</p>
+                        <p>PlayOJO offers live dealer games designed to recreate the experience of visiting a physical
+                            casino from the comfort of home.</p>
+                        <p>Popular live casino options include:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Live Blackjack</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Live Roulette</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Live Baccarat</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Game Show-style casino games</span></li>
+                        </ul>
+                        <p>Live dealer games are streamed in real time with professional dealers, allowing players to
+                            interact with the game environment while enjoying the convenience of online play.</p>
+                        <p>For Ontario players comparing the <strong>best Ontario casino online</strong> options, live
+                            casino availability is an important feature, especially for players who want a more
+                            immersive experience.</p>
+                    </div>
+                </div>
+
+                <!-- Table Games at PlayOJO -->
+                <div id="table-games-at-playojo" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3.5" y="7.5" width="12" height="14" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 3.5l9.5 3.2-4.4 13.3" />
+                                <circle cx="9.5" cy="13.5" r="1.3" stroke-linecap="round" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">Table Games at PlayOJO</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>For players who prefer strategy-based games, PlayOJO offers several traditional casino
+                            favourites.</p>
+                        <span class="aag-crev-subhead"><span class="aag-crev-subhead-dot"></span>Blackjack</span>
+                        <p>Blackjack remains one of the most popular casino games because players can use
+                            decision-making and strategy.</p>
+                        <p>PlayOJO provides multiple blackjack variations, allowing players to choose different rules
+                            and betting options.</p>
+                        <span class="aag-crev-subhead"><span class="aag-crev-subhead-dot"></span>Roulette</span>
+                        <p>Roulette provides a classic casino experience with simple and advanced betting choices.</p>
+                        <p>Players can wager on:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Individual numbers</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Colours</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Odd or even outcomes</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Groups of numbers</span></li>
+                        </ul>
+                        <span class="aag-crev-subhead"><span class="aag-crev-subhead-dot"></span>Baccarat</span>
+                        <p>Baccarat is popular among players looking for a simple yet elegant casino game.</p>
+                        <p>Players can bet on:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Player</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Banker</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Tie</span></li>
+                        </ul>
+                        <span class="aag-crev-subhead"><span class="aag-crev-subhead-dot"></span>Video Poker</span>
+                        <p>Video poker combines elements of poker strategy with casino gameplay and appeals to players
+                            who enjoy making decisions rather than relying entirely on chance.</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Casino Experience -->
+                <div id="mobile-casino-experience" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="7" y="2.5" width="10" height="19" rx="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M11 19h2" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">Mobile Casino Experience</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>A strong mobile platform is essential for any modern online casino.</p>
+                        <p>PlayOJO provides a mobile-friendly experience that allows Ontario players to access casino
+                            games from smartphones and tablets.</p>
+                        <p>Mobile features include:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Casino game browsing</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Slot gameplay</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Live casino access</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Account management</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Deposits</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Withdrawals</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Promotions</span></li>
+                        </ul>
+                        <p>The mobile interface is designed to be simple and easy to navigate, making it suitable for
+                            both new players and experienced casino users.</p>
+                        <p>A quality mobile experience is one of the reasons PlayOJO continues to compete among leading
+                            online casino platforms.</p>
+                    </div>
+                    <a href="#" class="aag-crev-cta">
+                        Play On Mobile
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Deposits and Withdrawals -->
+                <div id="deposits-and-withdrawals" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="6" width="18" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M3 10h18" />
+                                <path stroke-linecap="round" d="M6.5 14h3" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">Deposits and Withdrawals</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>Payment options are an important part of any <strong>best casino review</strong>.</p>
+                        <p>PlayOJO supports secure banking methods designed for Canadian players.</p>
+                        <p>Common payment options may include:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Interac e-Transfer</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Visa</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Mastercard</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Online payment solutions</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Other approved banking methods</span></li>
+                        </ul>
+                        <p>Players should complete account verification requirements before requesting withdrawals, as
+                            identity checks are standard practice across regulated Ontario casinos.</p>
+                        <p>A reliable payment system helps create a smoother overall casino experience.</p>
+                    </div>
+                </div>
+
+                <!-- PlayOJO Promotions and Bonuses -->
+                <div id="playojo-promotions-and-bonuses" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="4" y="9.5" width="16" height="10.5" rx="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 9.5h16M12 9.5v10.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 9.5c-1.66 0-3-1.12-3-2.75S6.34 4 8 4c1.66 0 4 2.5 4 5.5m0 0c0-3 2.34-5.5 4-5.5 1.66 0 3 1.12 3 2.75S17.66 9.5 16 9.5" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">PlayOJO Promotions and Bonuses</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>Promotions are an important consideration when comparing the <strong>best online
+                                casino</strong> options.</p>
+                        <p>PlayOJO has traditionally focused on a transparent approach to promotions rather than
+                            complicated bonus structures.</p>
+                        <p>Possible offers may include:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Welcome promotions</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Casino rewards</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Free spins</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Seasonal promotions</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Special events</span></li>
+                        </ul>
+                        <p>One feature that has helped PlayOJO stand out internationally is its emphasis on
+                            straightforward promotions without excessive wagering requirements.</p>
+                        <p>However, players should always review the current terms and conditions before accepting any
+                            offer.</p>
+                    </div>
+                </div>
+
+                <!-- User Experience and Interface -->
+                <div id="user-experience-and-interface" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3.5" y="3.5" width="7" height="7" rx="1.2" />
+                                <rect x="13.5" y="3.5" width="7" height="7" rx="1.2" />
+                                <rect x="3.5" y="13.5" width="7" height="7" rx="1.2" />
+                                <rect x="13.5" y="13.5" width="7" height="7" rx="1.2" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">User Experience and Interface</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>PlayOJO has developed a reputation for having a clean and easy-to-use interface.</p>
+                        <p>The platform allows players to quickly find:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>New casino releases</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Popular slots</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Table games</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Live casino options</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Promotions</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Account settings</span></li>
+                        </ul>
+                        <p>The design focuses on simplicity, making it accessible for casual players while still
+                            offering enough variety for experienced casino enthusiasts.</p>
+                    </div>
+                </div>
+
+                <!-- Security and Responsible Gambling -->
+                <div id="security-and-responsible-gambling" class="aag-crev-card">
+                    <div class="aag-crev-sec-head">
+                        <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-crev-sec-title">Security and Responsible Gambling</h3>
+                    </div>
+                    <div class="aag-crev-sec-body">
+                        <p>Security is one of the most important considerations when choosing the <strong>best Ontario
+                                casino online</strong>.</p>
+                        <p>PlayOJO provides features designed to protect players, including:</p>
+                        <ul class="aag-crev-list">
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Secure account management</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Responsible gambling tools</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Deposit controls</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Player limits</span></li>
+                            <li class="aag-crev-list-item"><span class="aag-crev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Self-exclusion options</span></li>
+                        </ul>
+                        <p>Responsible gambling features help players maintain control and ensure casino gaming remains
+                            an enjoyable form of entertainment.</p>
+                    </div>
+                </div>
+
+                <!-- Pros & Cons -->
+                <div id="pros-and-cons" class="aag-crev-proscons">
+                    <div class="aag-crev-card aag-crev-pros">
+                        <div class="aag-crev-sec-head">
+                            <span class="aag-crev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg></span>
+                            <h3 class="aag-crev-pc-title aag-crev-pros-text">Pros</h3>
+                        </div>
+                        <ul class="aag-crev-pc-list">
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Regulated online casino experience</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Large selection of slots</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Strong live casino offering</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Mobile-friendly platform</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Transparent approach to promotions</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Wide range of casino providers</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Easy-to-use interface</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Responsible gambling tools</span></li>
+                        </ul>
+                    </div>
+                    <div class="aag-crev-card aag-crev-cons">
+                        <div class="aag-crev-sec-head">
+                            <span class="aag-crev-sec-icon"
+                                style="background-color: rgba(220,38,38,0.15); color:#dc2626;"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                                    <path stroke-linecap="round" d="M12 9v4" />
+                                    <circle cx="12" cy="16.2" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                                </svg></span>
+                            <h3 class="aag-crev-pc-title aag-crev-cons-text">Cons</h3>
+                        </div>
+                        <ul class="aag-crev-pc-list">
+                            <li><span class="aag-crev-pc-dot aag-crev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Some high-volume players may prefer casinos with larger VIP
+                                    programs</span></li>
+                            <li><span class="aag-crev-pc-dot aag-crev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Promotions may differ from traditional bonus-heavy casinos</span>
+                            </li>
+                            <li><span class="aag-crev-pc-dot aag-crev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Game availability can vary over time</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Verdict -->
+                <div id="verdict" class="aag-crev-card aag-crev-verdict">
+                    <div class="aag-crev-verdict-head">
+                        <span class="aag-crev-verdict-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10v5a5 5 0 01-10 0V4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 5.5H4.5a2 2 0 000 4H7M17 5.5h2.5a2 2 0 010 4H17" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14v3M9 20.5h6M9.5 20.5l.7-3.5h3.6l.7 3.5" />
+                            </svg></span>
+                        <div>
+                            <span class="aag-crev-verdict-eyebrow">Our Verdict</span>
+                            <h3 class="aag-crev-verdict-title">Final Verdict: Is PlayOJO the Best Online Casino in
+                                Ontario?</h3>
+                        </div>
+                    </div>
+                    <p>After completing this <strong>PlayOJO online casino review Ontario</strong>, it is clear that
+                        PlayOJO offers a strong overall casino experience for Ontario players.</p>
+                    <p>Its biggest strengths are game variety, transparency, user-friendly design, mobile performance,
+                        and commitment to responsible gaming.</p>
+                    <p>While Ontario players have many excellent casino choices, PlayOJO stands out for those who prefer
+                        a straightforward and enjoyable platform without unnecessary complexity.</p>
+                    <p>For anyone searching for the <strong>best online casino</strong>, researching a <strong>best
+                            casino review</strong>, or comparing options for the <strong>best Ontario casino
+                            online</strong>, PlayOJO deserves consideration as a reliable and entertaining choice.</p>
+                    <p>With a strong selection of slots, live casino games, secure banking options, and a modern user
+                        experience, PlayOJO remains a competitive option in Ontario's growing regulated online casino
+                        market.</p>
+                    <p>PlayOJO is a trusted, user-friendly online casino offering a balanced mix of entertainment,
+                        security, and game variety for Ontario casino players.</p>
+                    <a href="#" class="aag-crev-cta">
+                        Visit Website
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sticky sidebar -->
+            <div class="aag-crev-sidebar-col">
+                <div class="aag-crev-sidebar-sticky">
+                    <div class="aag-crev-sidebar">
+                        <span class="aag-crev-rank-badge">#1 in Ontario</span>
+
+                        <div class="aag-crev-logo-box">
+                            <img src="https://askaboutgaming.ca/wp-content/uploads/2026/07/10404ef02f.webp"
+                                alt="PlayOJO logo" />
+                        </div>
+
+                        <h3 class="aag-crev-sb-name">PlayOJO</h3>
+                        <p class="aag-crev-sb-tagline">Large Exclusive Slots Library, World-Class App.</p>
+
+                        <a href="#" class="aag-crev-sb-cta">Visit Website</a>
+                        <p class="aag-crev-sb-disclaimer">19+ Play Responsibly</p>
+
+                        <div class="aag-crev-sb-stats">
+                            <div class="aag-crev-sb-stat-row">
+                                <span class="aag-crev-sb-stat-label">
+                                    <span class="aag-crev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3.5" y="4.5" width="17" height="15" rx="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.5 4.5v15M15.5 4.5v15" />
+                                            <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                            <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                        </svg></span>
+                                    <span>Casino Games</span>
+                                </span>
+                                <span class="aag-crev-sb-stat-value">2,000+</span>
+                            </div>
+                            <div class="aag-crev-sb-stat-row">
+                                <span class="aag-crev-sb-stat-label">
+                                    <span class="aag-crev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Min. Deposit</span>
+                                </span>
+                                <span class="aag-crev-sb-stat-value">$10</span>
+                            </div>
+                            <div class="aag-crev-sb-stat-row">
+                                <span class="aag-crev-sb-stat-label">
+                                    <span class="aag-crev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3.5" y="7.5" width="12" height="14" rx="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.5 3.5l9.5 3.2-4.4 13.3" />
+                                        </svg></span>
+                                    <span>Blackjack Games</span>
+                                </span>
+                                <span class="aag-crev-sb-stat-value">26</span>
+                            </div>
+                            <div class="aag-crev-sb-stat-row">
+                                <span class="aag-crev-sb-stat-label">
+                                    <span class="aag-crev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                                        </svg></span>
+                                    <span>Payout Speed</span>
+                                </span>
+                                <span class="aag-crev-sb-stat-value">3-5 days</span>
+                            </div>
+                        </div>
+
+                        <div class="aag-crev-sb-payments">
+                            <span class="aag-crev-sb-payments-label">Payment Methods</span>
+                            <div class="aag-crev-payment-pills">
+                                <span class="aag-crev-payment-pill">PayPal</span>
+                                <span class="aag-crev-payment-pill">Interac</span>
+                                <span class="aag-crev-payment-pill">Visa</span>
+                                <span class="aag-crev-payment-pill">Mastercard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
