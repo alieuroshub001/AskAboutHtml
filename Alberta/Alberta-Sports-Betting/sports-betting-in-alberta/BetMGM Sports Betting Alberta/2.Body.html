@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetMGM Full Review</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-absrev-toc,
+        .aag-absrev-section {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-toc *,
+        .aag-absrev-toc *::before,
+        .aag-absrev-toc *::after,
+        .aag-absrev-section *,
+        .aag-absrev-section *::before,
+        .aag-absrev-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* Sticky TOC */
+        .aag-absrev-toc {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            border-bottom: 1px solid #1e293b;
+            background: rgba(11, 17, 32, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .aag-absrev-toc-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .aag-absrev-toc-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .aag-absrev-toc-pill {
+            flex-shrink: 0;
+            white-space: nowrap;
+            border: 1px solid #1e293b;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-toc-pill:hover {
+            border-color: #dc2626;
+            color: #ffffff !important;
+        }
+
+        /* Section wrapper */
+        .aag-absrev-section {
+            background-color: #0b1120;
+            padding: 3rem 0 5rem;
+            color: #ffffff;
+        }
+
+        .aag-absrev-container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .aag-absrev-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-grid {
+                grid-template-columns: 1fr 320px;
+                gap: 2.5rem;
+            }
+        }
+
+        .aag-absrev-main {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            min-width: 0;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-main {
+                order: 1;
+            }
+        }
+
+        .aag-absrev-sidebar-col {
+            order: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-sidebar-col {
+                order: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-sidebar-sticky {
+                position: sticky;
+                top: 6rem;
+            }
+        }
+
+        /* Card */
+        .aag-absrev-card {
+            scroll-margin-top: 5rem;
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+        }
+
+        .aag-absrev-proscons {
+            scroll-margin-top: 5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-card {
+                padding: 2rem;
+            }
+        }
+
+        .aag-absrev-card p {
+            color: #94a3b8 !important;
+            line-height: 1.625;
+            margin: 0 0 1rem 0;
+            font-size: 1rem !important;
+        }
+
+        .aag-absrev-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .aag-absrev-overview p.aag-absrev-lead {
+            font-size: 1.125rem !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .aag-absrev-features-title {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-features-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        /* Section heading with icon */
+        .aag-absrev-sec-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-absrev-sec-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-sec-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-absrev-sec-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-sec-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-sec-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Checklist */
+        .aag-absrev-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-absrev-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-check {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-check svg {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        /* Subheading pill */
+        .aag-absrev-subhead {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 9999px;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 1rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        .aag-absrev-subhead-dot {
+            width: 0.375rem;
+            height: 0.375rem;
+            border-radius: 9999px;
+            background-color: #dc2626;
+        }
+
+        /* Pros & Cons */
+        .aag-absrev-proscons {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .aag-absrev-proscons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-absrev-pros {
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-cons {
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-pc-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-pc-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-pc-title.aag-absrev-pros-text {
+            color: #2563eb !important;
+        }
+
+        .aag-absrev-pc-title.aag-absrev-cons-text {
+            color: #dc2626 !important;
+        }
+
+        .aag-absrev-pc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+
+        .aag-absrev-pc-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #ffffff !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-pc-dot {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-pc-dot svg {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+
+        .aag-absrev-pc-dot.aag-absrev-pros-dot {
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+
+        .aag-absrev-pc-dot.aag-absrev-cons-dot {
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+        }
+
+        /* Verdict */
+        .aag-absrev-verdict {
+            border-color: rgba(220, 38, 38, 0.3);
+            background: linear-gradient(to bottom right, #111b2e, #0d1526);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-verdict {
+                padding: 2.5rem;
+            }
+        }
+
+        .aag-absrev-verdict-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-absrev-verdict-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-verdict-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-absrev-verdict-eyebrow {
+            display: block;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #dc2626 !important;
+        }
+
+        .aag-absrev-verdict-title {
+            margin: 0.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-verdict-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-cta {
+            margin-top: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 1rem 2rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-cta:hover {
+            background-color: #ef4444;
+            transform: scale(1.05);
+        }
+
+        .aag-absrev-cta svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-absrev-cta-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .aag-absrev-cta-center .aag-absrev-cta {
+            margin-top: 0;
+            width: 100%;
+            max-width: 16rem;
+            justify-content: center;
+        }
+
+        /* Sidebar */
+        .aag-absrev-sidebar {
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-sidebar {
+                padding: 1.75rem;
+            }
+        }
+
+        .aag-absrev-rank-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            background-color: rgba(220, 38, 38, 0.15);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ef4444 !important;
+        }
+
+        .aag-absrev-logo-box {
+            margin: 1.25rem auto 0;
+            display: flex;
+            height: 5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-logo-box img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .aag-absrev-sb-name {
+            margin: 1.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+        }
+
+        .aag-absrev-sb-name.aag-absrev-sb-name-large {
+            font-size: 1.875rem !important;
+        }
+
+        .aag-absrev-sb-tagline {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.875rem !important;
+            line-height: 1.625;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-cta {
+            margin-top: 1.25rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 0.875rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-sb-cta:hover {
+            background-color: #ef4444;
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.25);
+        }
+
+        .aag-absrev-sb-disclaimer {
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+            font-size: 10px !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stats {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .aag-absrev-sb-stat-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .aag-absrev-sb-stat-label {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stat-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-sb-stat-icon svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-absrev-sb-stat-label span {
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stat-value {
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-absrev-sb-payments {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+        }
+
+        .aag-absrev-sb-payments-label {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-payment-pills {
+            margin-top: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .aag-absrev-payment-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Table of Contents -->
+    <section class="aag-absrev-toc">
+        <div class="aag-absrev-toc-inner">
+            <a href="#overview" class="aag-absrev-toc-pill">Overview</a>
+            <a href="#is-betmgm-legal-in-alberta" class="aag-absrev-toc-pill">Is BetMGM Legal in Alberta?</a>
+            <a href="#sports-coverage-odds-quality" class="aag-absrev-toc-pill">Sports Coverage & Odds Quality</a>
+            <a href="#live-betting-same-game-parlays" class="aag-absrev-toc-pill">Live Betting & Same Game Parlays</a>
+            <a href="#banking-deposits-withdrawals" class="aag-absrev-toc-pill">Banking: Deposits & Withdrawals</a>
+            <a href="#customer-support-mobile-experience" class="aag-absrev-toc-pill">Customer Support & Mobile
+                Experience</a>
+            <a href="#pros-and-cons" class="aag-absrev-toc-pill">Pros & Cons</a>
+            <a href="#verdict" class="aag-absrev-toc-pill">Verdict</a>
+        </div>
+    </section>
+
+    <!-- Review Content + Sidebar -->
+    <section class="aag-absrev-section">
+        <div class="aag-absrev-container">
+            <!-- View Website CTA -->
+            <div class="aag-absrev-cta-center">
+                <a href="#" class="aag-absrev-cta">
+                    View Website
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="aag-absrev-container aag-absrev-grid">
+
+            <!-- Main article column -->
+            <div class="aag-absrev-main">
+
+                <!-- Why Players Choose -->
+                <div class="aag-absrev-card">
+                    <h3 class="aag-absrev-features-title">Why Players Choose BetMGM</h3>
+                    <ul class="aag-absrev-list">
+                        <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Extensive Betting Markets</span></li>
+                        <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Same Game Parlays</span></li>
+                        <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Retail & Online Integration</span></li>
+                    </ul>
+                </div>
+
+                <!-- Overview -->
+                <div id="overview" class="aag-absrev-card aag-absrev-overview">
+                    <p class="aag-absrev-lead">For sports bettors in Alberta, finding a reliable sportsbook with deep
+                        coverage of North American sports is essential. <strong>BetMGM</strong> is one of the leading
+                        options for Alberta bettors looking for a trusted, globally recognized sportsbook brand.</p>
+                    <p>In this detailed BetMGM Alberta review, we cover everything from NHL betting markets to the
+                        live betting engine, banking options, and why it stands out for Alberta sports fans.</p>
+                </div>
+
+                <!-- Is BetMGM Legal in Alberta? -->
+                <div id="is-betmgm-legal-in-alberta" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">Is BetMGM Legal in Alberta?</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Yes, BetMGM legally accepts players from Alberta. Unlike Ontario, which regulates online
+                            sports betting through the Alcohol and Gaming Commission of Ontario (AGCO) and iGaming
+                            Ontario (iGO), Alberta does not currently operate its own provincial online sports betting
+                            regulator, so Alberta bettors access BetMGM through its internationally licensed
+                            platform.</p>
+                        <p>By operating under respected international jurisdictions such as the Kahnawake Gaming
+                            Commission and the Malta Gaming Authority, BetMGM ensures fair odds, secure transactions,
+                            and a safe betting environment for Alberta players, even without a made-in-Alberta
+                            regulator overseeing the market.</p>
+                    </div>
+                </div>
+
+                <!-- Sports Coverage & Odds Quality -->
+                <div id="sports-coverage-odds-quality" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">Sports Coverage & Odds Quality</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>BetMGM provides extensive coverage for the sports Alberta bettors care about most.</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NHL & Hockey:</strong> Massive variety of puck lines,
+                                    player props (shots on goal, anytime goalscorer), and futures.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NFL & CFL:</strong> Deep coverage for football fans,
+                                    including alt lines and comprehensive prop markets.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NBA & Basketball:</strong> Extensive in-play betting
+                                    and Same Game Parlay features.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Global Sports:</strong> Soccer (Premier League, MLS),
+                                    Tennis, UFC, Golf, and eSports.</span></li>
+                        </ul>
+                        <p>The odds pricing is consistently competitive against other major international sportsbooks
+                            available to Alberta bettors.</p>
+                    </div>
+                </div>
+
+                <!-- Live Betting & Same Game Parlays -->
+                <div id="live-betting-same-game-parlays" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                <path stroke-linecap="round" d="M12 11v5" />
+                                <circle cx="12" cy="8" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">Live Betting & Same Game Parlays</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>The live betting engine at BetMGM is highly responsive, allowing Alberta bettors to place
+                            wagers as the action unfolds on the ice or field without frustrating delays.</p>
+                        <p>Additionally, their Same Game Parlay (SGP) builder is top-notch, letting you combine
+                            moneylines, totals, and player props into a single bet for higher potential payouts.</p>
+                    </div>
+                </div>
+
+                <!-- Banking: Deposits & Withdrawals -->
+                <div id="banking-deposits-withdrawals" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="6" width="18" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M3 10h18" />
+                                <path stroke-linecap="round" d="M6.5 14h3" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">Banking: Deposits & Withdrawals</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>As an Alberta-friendly sportsbook, BetMGM processes transactions in CAD, meaning no
+                            currency conversion fees.</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Interac e-Transfer (Highly recommended for speed and
+                                    reliability)</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Visa & Mastercard</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Instadebit and iDebit</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>MuchBetter and other e-wallets</span></li>
+                        </ul>
+                        <p>Payout speeds are standard for the industry, with Interac withdrawals generally clearing
+                            within 24 to 48 hours.</p>
+                    </div>
+                </div>
+
+                <!-- Customer Support & Mobile Experience -->
+                <div id="customer-support-mobile-experience" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="7" y="2.5" width="10" height="19" rx="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M11 19h2" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">Customer Support & Mobile Experience</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Whether you use a dedicated app or the mobile-optimized website, placing bets on the go is
+                            seamless. The interface is clean and allows for quick navigation to live events.</p>
+                        <p>If you need assistance, customer support is available 24/7 via live chat and email to help
+                            with bet settlements, account verification, or banking questions.</p>
+                    </div>
+                    <a href="#" class="aag-absrev-cta">
+                        Play On Mobile
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Pros & Cons -->
+                <div id="pros-and-cons" class="aag-absrev-proscons">
+                    <div class="aag-absrev-card aag-absrev-pros">
+                        <div class="aag-absrev-sec-head">
+                            <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg></span>
+                            <h3 class="aag-absrev-pc-title aag-absrev-pros-text">Pros</h3>
+                        </div>
+                        <ul class="aag-absrev-pc-list">
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Excellent coverage of NHL and CFL markets</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Supports CAD and Interac e-Transfer</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Robust live betting and Same Game Parlays</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Competitive bonuses for Alberta bettors</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Backed by a globally recognized MGM brand</span></li>
+                        </ul>
+                    </div>
+                    <div class="aag-absrev-card aag-absrev-cons">
+                        <div class="aag-absrev-sec-head">
+                            <span class="aag-absrev-sec-icon"
+                                style="background-color: rgba(220,38,38,0.15); color:#dc2626;"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                                    <path stroke-linecap="round" d="M12 9v4" />
+                                    <circle cx="12" cy="16.2" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                                </svg></span>
+                            <h3 class="aag-absrev-pc-title aag-absrev-cons-text">Cons</h3>
+                        </div>
+                        <ul class="aag-absrev-pc-list">
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>No made-in-Alberta regulator, so players rely on offshore
+                                    licensing safeguards</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Some niche sports lack deep prop markets</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Customer support times can vary during peak events</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Verdict -->
+                <div id="verdict" class="aag-absrev-card aag-absrev-verdict">
+                    <div class="aag-absrev-verdict-head">
+                        <span class="aag-absrev-verdict-icon"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10v5a5 5 0 01-10 0V4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 5.5H4.5a2 2 0 000 4H7M17 5.5h2.5a2 2 0 010 4H17" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14v3M9 20.5h6M9.5 20.5l.7-3.5h3.6l.7 3.5" />
+                            </svg></span>
+                        <div>
+                            <span class="aag-absrev-verdict-eyebrow">Our Verdict</span>
+                            <h3 class="aag-absrev-verdict-title">Final Verdict</h3>
+                        </div>
+                    </div>
+                    <p>For sports bettors in Alberta, <strong>BetMGM</strong> offers a premier, safe, and highly
+                        functional betting platform. Its strong focus on North American sports—particularly hockey
+                        and football—makes it a natural fit for Alberta bettors.</p>
+                    <p>Combined with convenient banking options like Interac and a strong live betting interface,
+                        BetMGM is highly recommended for anyone looking to bet on sports in Alberta.</p>
+                    <a href="#" class="aag-absrev-cta">
+                        Visit Website
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sticky sidebar -->
+            <div class="aag-absrev-sidebar-col">
+                <div class="aag-absrev-sidebar-sticky">
+                    <div class="aag-absrev-sidebar">
+                        <span class="aag-absrev-rank-badge">#1 in Alberta</span>
+
+                        <div class="aag-absrev-logo-box">
+                            <img src="https://askaboutgaming.ca/wp-content/uploads/2026/07/9cdca0e470.webp"
+                                alt="BetMGM logo" />
+                        </div>
+
+                        <h3 class="aag-absrev-sb-name">BetMGM</h3>
+                        <p class="aag-absrev-sb-tagline">Trusted Global Sportsbook Brand, Available to Alberta
+                            Bettors.</p>
+
+                        <a href="#" class="aag-absrev-sb-cta">Visit Website</a>
+                        <p class="aag-absrev-sb-disclaimer">18+ Play Responsibly</p>
+
+                        <div class="aag-absrev-sb-stats">
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Sports Markets</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">30+</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Min. Deposit</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">$10</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M10.3 9.3l4.4 2.7-4.4 2.7V9.3z" fill="currentColor" stroke="none" />
+                                        </svg></span>
+                                    <span>Live Betting</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">Available</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                                        </svg></span>
+                                    <span>Payout Speed</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">1-3 days</span>
+                            </div>
+                        </div>
+
+                        <div class="aag-absrev-sb-payments">
+                            <span class="aag-absrev-sb-payments-label">Payment Methods</span>
+                            <div class="aag-absrev-payment-pills">
+                                <span class="aag-absrev-payment-pill">Interac</span>
+                                <span class="aag-absrev-payment-pill">Visa</span>
+                                <span class="aag-absrev-payment-pill">Mastercard</span>
+                                <span class="aag-absrev-payment-pill">PayPal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

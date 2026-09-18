@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TonyBet Full Review</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-absrev-toc,
+        .aag-absrev-section {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-toc *,
+        .aag-absrev-toc *::before,
+        .aag-absrev-toc *::after,
+        .aag-absrev-section *,
+        .aag-absrev-section *::before,
+        .aag-absrev-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* Sticky TOC */
+        .aag-absrev-toc {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            border-bottom: 1px solid #1e293b;
+            background: rgba(11, 17, 32, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .aag-absrev-toc-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .aag-absrev-toc-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .aag-absrev-toc-pill {
+            flex-shrink: 0;
+            white-space: nowrap;
+            border: 1px solid #1e293b;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-toc-pill:hover {
+            border-color: #dc2626;
+            color: #ffffff !important;
+        }
+
+        /* Section wrapper */
+        .aag-absrev-section {
+            background-color: #0b1120;
+            padding: 3rem 0 5rem;
+            color: #ffffff;
+        }
+
+        .aag-absrev-container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .aag-absrev-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-grid {
+                grid-template-columns: 1fr 320px;
+                gap: 2.5rem;
+            }
+        }
+
+        .aag-absrev-main {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            min-width: 0;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-main {
+                order: 1;
+            }
+        }
+
+        .aag-absrev-sidebar-col {
+            order: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-sidebar-col {
+                order: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-sidebar-sticky {
+                position: sticky;
+                top: 6rem;
+            }
+        }
+
+        /* Card */
+        .aag-absrev-card {
+            scroll-margin-top: 5rem;
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-card {
+                padding: 2rem;
+            }
+        }
+
+        .aag-absrev-card p {
+            color: #94a3b8 !important;
+            line-height: 1.625;
+            margin: 0 0 1rem 0;
+            font-size: 1rem !important;
+        }
+
+        .aag-absrev-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .aag-absrev-overview p.aag-absrev-lead {
+            font-size: 1.125rem !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .aag-absrev-features-title {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-features-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        /* Section heading with icon */
+        .aag-absrev-sec-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-absrev-sec-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-sec-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-absrev-sec-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-sec-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-sec-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Checklist */
+        .aag-absrev-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-absrev-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-check {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-check svg {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        /* Subheading pill */
+        .aag-absrev-subhead {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 9999px;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 1rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        .aag-absrev-subhead-dot {
+            width: 0.375rem;
+            height: 0.375rem;
+            border-radius: 9999px;
+            background-color: #dc2626;
+        }
+
+        /* Table */
+        .aag-absrev-table-wrap {
+            overflow-x: auto;
+            border-radius: 1rem;
+            border: 1px solid #1e293b;
+        }
+
+        .aag-absrev-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem !important;
+        }
+
+        .aag-absrev-table thead {
+            background-color: #111b2e;
+        }
+
+        .aag-absrev-table th {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-absrev-table td {
+            padding: 0.75rem 1rem;
+            color: #94a3b8 !important;
+            border-top: 1px solid #1e293b;
+            white-space: nowrap;
+        }
+
+        .aag-absrev-table tr.aag-absrev-table-verdict td {
+            background-color: rgba(220, 38, 38, 0.1);
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        /* Pros & Cons */
+        .aag-absrev-proscons {
+            scroll-margin-top: 5rem;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .aag-absrev-proscons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-absrev-pros {
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-cons {
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-pc-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-pc-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-pc-title.aag-absrev-pros-text {
+            color: #2563eb !important;
+        }
+
+        .aag-absrev-pc-title.aag-absrev-cons-text {
+            color: #dc2626 !important;
+        }
+
+        .aag-absrev-pc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+
+        .aag-absrev-pc-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #ffffff !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-pc-dot {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-pc-dot svg {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+
+        .aag-absrev-pc-dot.aag-absrev-pros-dot {
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+
+        .aag-absrev-pc-dot.aag-absrev-cons-dot {
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+        }
+
+        /* Verdict */
+        .aag-absrev-verdict {
+            border-color: rgba(220, 38, 38, 0.3);
+            background: linear-gradient(to bottom right, #111b2e, #0d1526);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-verdict {
+                padding: 2.5rem;
+            }
+        }
+
+        .aag-absrev-verdict-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-absrev-verdict-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-verdict-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-absrev-verdict-eyebrow {
+            display: block;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #dc2626 !important;
+        }
+
+        .aag-absrev-verdict-title {
+            margin: 0.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-verdict-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-cta {
+            margin-top: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 1rem 2rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-cta:hover {
+            background-color: #ef4444;
+            transform: scale(1.05);
+        }
+
+        .aag-absrev-cta svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-absrev-cta-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .aag-absrev-cta-center .aag-absrev-cta {
+            margin-top: 0;
+            width: 100%;
+            max-width: 16rem;
+            justify-content: center;
+        }
+
+        /* Sidebar */
+        .aag-absrev-sidebar {
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-sidebar {
+                padding: 1.75rem;
+            }
+        }
+
+        .aag-absrev-rank-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            background-color: rgba(220, 38, 38, 0.15);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ef4444 !important;
+        }
+
+        .aag-absrev-logo-box {
+            margin: 1.25rem auto 0;
+            display: flex;
+            height: 5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-logo-box img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .aag-absrev-sb-name {
+            margin: 1.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+        }
+
+        .aag-absrev-sb-tagline {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.875rem !important;
+            line-height: 1.625;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-cta {
+            margin-top: 1.25rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 0.875rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-sb-cta:hover {
+            background-color: #ef4444;
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.25);
+        }
+
+        .aag-absrev-sb-disclaimer {
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+            font-size: 10px !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stats {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .aag-absrev-sb-stat-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .aag-absrev-sb-stat-label {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stat-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-sb-stat-icon svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-absrev-sb-stat-label span {
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stat-value {
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-absrev-sb-payments {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+        }
+
+        .aag-absrev-sb-payments-label {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-payment-pills {
+            margin-top: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .aag-absrev-payment-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Table of Contents -->
+    <section class="aag-absrev-toc">
+        <div class="aag-absrev-toc-inner">
+            <a href="#overview" class="aag-absrev-toc-pill">Overview</a>
+            <a href="#tonybet-alberta-sportsbook-at-a-glance" class="aag-absrev-toc-pill">TonyBet Alberta Sportsbook at
+                a Glance</a>
+            <a href="#1-is-tonybet-legal-in-alberta" class="aag-absrev-toc-pill">1. Is TonyBet Legal in Alberta?</a>
+            <a href="#2-sports-coverage-odds-quality-and-same-game-parlays" class="aag-absrev-toc-pill">2. Sports
+                Coverage, Odds Quality &amp; Same Game Parlays</a>
+            <a href="#3-user-experience-ux-and-navigation" class="aag-absrev-toc-pill">3. User Experience (UX) &amp;
+                Navigation</a>
+            <a href="#4-banking-options-and-withdrawal-reliability" class="aag-absrev-toc-pill">4. Banking Options &amp;
+                Withdrawal Reliability</a>
+            <a href="#5-mobile-app-compatibility-and-performance" class="aag-absrev-toc-pill">5. Mobile App
+                Compatibility &amp; Performance</a>
+            <a href="#6-customer-support-accessibility" class="aag-absrev-toc-pill">6. Customer Support
+                Accessibility</a>
+            <a href="#7-responsible-gambling-tools" class="aag-absrev-toc-pill">7. Responsible Gambling Tools</a>
+            <a href="#8-overall-value-for-alberta-players" class="aag-absrev-toc-pill">8. Overall Value for Alberta
+                Players</a>
+            <a href="#pros-and-cons" class="aag-absrev-toc-pill">Pros &amp; Cons</a>
+            <a href="#verdict" class="aag-absrev-toc-pill">Verdict</a>
+        </div>
+    </section>
+
+    <!-- Review Content + Sidebar -->
+    <section class="aag-absrev-section">
+        <div class="aag-absrev-container">
+            <!-- View Website CTA -->
+            <div class="aag-absrev-cta-center">
+                <a href="#" class="aag-absrev-cta">
+                    View Website
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="aag-absrev-container aag-absrev-grid">
+
+            <!-- Main article column -->
+            <div class="aag-absrev-main">
+
+                <!-- Why Bettors Choose -->
+                <div class="aag-absrev-card">
+                    <h3 class="aag-absrev-features-title">Why Bettors Choose TonyBet</h3>
+                    <ul class="aag-absrev-list">
+                        <li class="aag-absrev-list-item">
+                            <span class="aag-absrev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Wide Sports Market Coverage</span>
+                        </li>
+                        <li class="aag-absrev-list-item">
+                            <span class="aag-absrev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Competitive Odds</span>
+                        </li>
+                        <li class="aag-absrev-list-item">
+                            <span class="aag-absrev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Fast Payouts</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Overview -->
+                <div id="overview" class="aag-absrev-card aag-absrev-overview">
+                    <p class="aag-absrev-lead">If you're looking for an honest TonyBet Alberta sportsbook review,
+                        you've come to the right place. TonyBet has built a strong global reputation for competitive
+                        odds, an intuitive betting platform, and a wide selection of sports markets, and it has become
+                        a popular option for Alberta bettors who want a full-featured, casino-plus-sportsbook
+                        experience under one login.</p>
+                    <p>Unlike Ontario, Alberta does not have a provincial regulator overseeing online sports betting
+                        the way the Alcohol and Gaming Commission of Ontario (AGCO) and iGaming Ontario (iGO) do.
+                        Instead, TonyBet serves Alberta bettors through the same internationally licensed platform
+                        used across most of Canada outside Ontario — a combined casino-and-sportsbook account that is
+                        distinct from the province-specific, locally regulated product offered to Ontario residents.
+                        Alberta bettors should always confirm their own eligibility and review the platform's terms
+                        before signing up.</p>
+                    <p>This comprehensive online sports betting review evaluates TonyBet across licensing, sports
+                        coverage, mobile usability, banking, customer support, responsible gambling tools and overall
+                        value to help determine whether it deserves a place among the best sportsbooks available to
+                        Alberta bettors.</p>
+                </div>
+
+                <!-- TonyBet Alberta Sportsbook at a Glance -->
+                <div id="tonybet-alberta-sportsbook-at-a-glance" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">TonyBet Alberta Sportsbook at a Glance</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <div class="aag-absrev-table-wrap">
+                            <table class="aag-absrev-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Rating</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sports Markets</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Live Betting Engine</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4.5/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Betting Odds &amp; Pricing</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile Experience</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Same Game Parlays</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9733; (4.5/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Promotions &amp; Offers</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Responsible Gambling</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</td>
+                                    </tr>
+                                    <tr class="aag-absrev-table-verdict">
+                                        <td>OVERALL VERDICT</td>
+                                        <td>9.1 / 10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1. Legal -->
+                <div id="1-is-tonybet-legal-in-alberta" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">1. Is TonyBet Legal in Alberta?</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Alberta does not have its own provincial framework for licensing and regulating online
+                            sports betting the way Ontario does through the AGCO and iGaming Ontario. Instead,
+                            sportsbooks like TonyBet serve Alberta bettors under respected international
+                            licenses — most commonly the Kahnawake Gaming Commission and the Malta Gaming Authority
+                            (MGA) — the same offshore-licensing model used across most of Canada outside Ontario.</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Operator</strong> - Ligtip Limited (TonyBet)</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Governing Regulators</strong> - Kahnawake Gaming
+                                    Commission and/or Malta Gaming Authority (international licensing, since Alberta
+                                    has no dedicated provincial sports betting regulator)</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Player Protection</strong> - Interac-friendly CAD
+                                    banking, independently audited games and odds, 256-bit SSL encryption, and
+                                    mandatory identity verification (KYC)</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Eligibility</strong> - Must be 18+ (Alberta's legal
+                                    minimum gambling age) and located in a Canadian province where offshore-licensed
+                                    sportsbooks are accessible</span></li>
+                        </ul>
+                        <p>Because TonyBet operates under these established offshore jurisdictions rather than a
+                            made-for-Alberta license, Alberta bettors should treat it the same way they would any
+                            other internationally licensed sportsbook: confirm the operator's current licensing
+                            status, read the terms of service, and make use of the platform's built-in responsible
+                            gambling tools. Choosing an established, independently audited operator like TonyBet —
+                            with encrypted transactions and Interac-based CAD banking — gives Alberta players a
+                            reasonably secure way to bet online despite the lack of a made-for-Alberta regulatory
+                            body.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Sports Coverage -->
+                <div id="2-sports-coverage-odds-quality-and-same-game-parlays" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="2.5" y="6" width="19" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" stroke-dasharray="1.6 2" d="M12 6v12" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">2. Sports Coverage, Odds Quality &amp; Same Game Parlays</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>One of TonyBet's primary strengths is the breadth and depth of its betting catalogue.
+                            Featuring over 30 individual sports categories, the platform serves local Canadian fans
+                            while maintaining international depth.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Covered Sports
+                            &amp; Leagues</span>
+                        <p>Whether you follow North America's major leagues or international competitions, TonyBet
+                            delivers comprehensive daily coverage:</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>North American Leagues:</strong> NHL, NBA, NFL, MLB,
+                                    CFL, MLS, WNBA, NCAA Football &amp; Basketball.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Global Sports:</strong> European Soccer (Premier
+                                    League, Champions League, Serie A, La Liga), Tennis (ATP/WTA), Golf (PGA, LIV),
+                                    UFC/MMA, Boxing, Formula 1, NASCAR.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Niche Markets &amp; Esports:</strong> Rugby, Cricket,
+                                    Table Tennis, Darts, Snooker, Volleyball, Handball, and competitive Esports (CS:GO,
+                                    Dota 2, Valorant, Call of Duty).</span></li>
+                        </ul>
+                        <p>The wide range of sports makes TonyBet appealing to casual bettors and experienced sports
+                            fans alike.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Extensive Betting
+                            Markets</span>
+                        <p>TonyBet expands far past moneyline betting by offering numerous betting options across
+                            major sporting events.</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Standard Lines</strong> - Moneyline, Point Spreads,
+                                    Totals (Over/Under).</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Props</strong> - Player Props (Points, Assists, Shots
+                                    on Goal, Anytime Touchdown/Goal Scorers) and Team Props.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Game Variations</strong> - Alternate Lines, Correct
+                                    Score, First Goal Scorer, Anytime Goal Scorer, Double Chance, Futures, Race to
+                                    Points.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Futures</strong> - Championship Winners, Division
+                                    Titles, Season Player Awards (MVP, Vezina, Calder).</span></li>
+                        </ul>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Live Betting
+                            &amp; Same Game Parlays (SGP)</span>
+                        <p>The TonyBet Live Betting Engine is fast and responsive, delivering an enjoyable in-play
+                            experience, where odds update dynamically as action unfolds on the ice, court, or field.
+                            Integrated features like live visual scoreboards, detailed real-time statistics, and Early
+                            Cash Out give bettors control over active slips. For players who enjoy reacting to
+                            momentum swings during games, TonyBet provides a responsive live betting interface that
+                            performs well across desktop and mobile devices.</p>
+                        <p>Additionally, the platform's native Bet Builder allows users to construct custom Same Game
+                            Parlays (SGPs). At TonyBet, you can combine match outcomes, total points, and individual
+                            player props into a single ticket for enhanced payout potential. Building customized
+                            parlays allows players to increase potential payouts while adding another level of
+                            excitement to major sporting events.</p>
+                        <p>Examples include:</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Team to win</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Total goals or points</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Player scoring props</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Player assists</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Shots on goal</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Alternate spreads</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Alternate totals</span></li>
+                        </ul>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Odds Pricing
+                            &amp; Odds Boosts</span>
+                        <p>Competitive odds are one of the most important factors when evaluating a sportsbook for
+                            Alberta bettors, and TonyBet performs well across many major leagues by maintaining
+                            competitive pricing across major Canadian sports leagues. Market margins for core North
+                            American sports (NHL, NFL, NBA) typically stay around industry standards, providing
+                            pricing that compares favourably with many other sportsbooks accessible to Alberta
+                            players. The sportsbook also regularly highlights designated games with Odds Boosts,
+                            giving players payout lifts on select bets. Over the long term, consistently competitive
+                            odds can make a meaningful difference for regular bettors.</p>
+                    </div>
+                </div>
+
+                <!-- 3. UX -->
+                <div id="3-user-experience-ux-and-navigation" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3.5" y="3.5" width="7" height="7" rx="1.2" />
+                                <rect x="13.5" y="3.5" width="7" height="7" rx="1.2" />
+                                <rect x="3.5" y="13.5" width="7" height="7" rx="1.2" />
+                                <rect x="13.5" y="13.5" width="7" height="7" rx="1.2" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">3. User Experience (UX) &amp; Navigation</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Navigating the TonyBet desktop interface is straightforward for both beginners and
+                            experienced handicappers. The layout adopts a clean, modern interface, featuring main
+                            sport navigation along the left sidebar, featured live events in the center, and dynamic
+                            bet slips pinned to the right, which makes finding sports and betting markets
+                            straightforward.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Navigation
+                            Highlights</span>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Intuitive Search Engine</strong> - Easily search for
+                                    upcoming events, specific teams, players, or leagues without clicking through
+                                    multi-layered submenus.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Statistical Analysis Tools</strong> - Built-in team
+                                    matchup statistics and head-to-head records are accessible directly from the event
+                                    page to aid pre-match research.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Quick Bet Slip Processing</strong> - Selections load
+                                    instantly into the slip, allowing single bets, multi-leg parlays, or system wagers
+                                    to be placed quickly.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. Banking -->
+                <div id="4-banking-options-and-withdrawal-reliability" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="6" width="18" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M3 10h18" />
+                                <path stroke-linecap="round" d="M6.5 14h3" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">4. Banking Options &amp; Withdrawal Reliability</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>TonyBet supports localized Canadian payment gateways, allowing seamless deposits and
+                            cash-outs directly in Canadian Dollars (CAD). Transaction privacy and financial security
+                            are backed by bank-grade encryption.</p>
+                        <div class="aag-absrev-table-wrap">
+                            <table class="aag-absrev-table">
+                                <thead>
+                                    <tr>
+                                        <th>Payment Method</th>
+                                        <th>Deposit Speed</th>
+                                        <th>Withdrawal Speed</th>
+                                        <th>Minimum Deposit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Interac e-Transfer</td>
+                                        <td>Instant</td>
+                                        <td>24 – 48 Hours</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visa / Mastercard</td>
+                                        <td>Instant</td>
+                                        <td>N/A (Deposit Only)</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Online Banking</td>
+                                        <td>Instant</td>
+                                        <td>1 – 3 Days</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-Wallets (MuchBetter)</td>
+                                        <td>Instant</td>
+                                        <td>12 – 24 Hours</td>
+                                        <td>$10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><strong>Pro Tip:</strong> Complete account identity verification (KYC) immediately upon
+                            signing up to ensure payout requests process without administrative delays.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Mobile -->
+                <div id="5-mobile-app-compatibility-and-performance" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="7" y="2.5" width="10" height="19" rx="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M11 19h2" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">5. Mobile App Compatibility &amp; Performance</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>With the majority of sports wagers in Alberta placed on smartphones, app stability and
+                            layout efficiency are top priorities.</p>
+                        <p>TonyBet provides mobile-optimized applications available for download on both iOS (Apple
+                            App Store) and Android (Google Play Store). The app mirrors full desktop functionality in
+                            a compact, touch-optimized format. Features include full sportsbook access, live betting,
+                            same game parlays along with deposits and withdrawals, bet history, account management and
+                            responsible gaming settings.</p>
+                        <p>Navigation is simple, pages load quickly, and placing bets requires only a few taps, making
+                            it convenient whether you're betting from home or on the move.</p>
+                    </div>
+                    <a href="#" class="aag-absrev-cta">
+                        Play On Mobile
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 6. Support -->
+                <div id="6-customer-support-accessibility" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v10H9l-4 4v-4H4V5z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">6. Customer Support Accessibility</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Should you encounter questions regarding account validation, bet settlement, or deposit
+                            limits, TonyBet provides customer service options accessible 24/7.</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Live Chat</strong> - Available 24/7 directly on the
+                                    website and app for immediate response to routine inquiries.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Email Support</strong> - Dedicated email queue
+                                    (info@tonybet.com) for detailed technical requests or document submissions,
+                                    typically returning responses within 12 to 24 hours.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Help Centre &amp; FAQ</strong> - An organized on-site
+                                    searchable knowledge base answering standard questions on rules, payouts, and
+                                    account settings.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7. Responsible Gambling -->
+                <div id="7-responsible-gambling-tools" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">7. Responsible Gambling Tools</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Even though Alberta does not have its own online sports betting regulator, TonyBet treats
+                            player safety as a core priority under the terms of its Kahnawake and Malta licenses, both
+                            of which require operators to provide meaningful responsible gambling protections.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Built-in Player
+                            Protection Tools:</span>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Deposit &amp; Loss Limits</strong> - Set daily, weekly,
+                                    or monthly caps on your funding.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Session Time Limits</strong> - Manage screen time with
+                                    pop-up session alerts.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Cooling-Off Periods</strong> - Temporarily pause account
+                                    access for short periods (24 hours up to 30 days).</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Self-Exclusion</strong> - Activate long-term
+                                    self-exclusion directly through account settings whenever a break is
+                                    needed.</span></li>
+                        </ul>
+                        <p>Alberta bettors can also lean on independent, made-in-Canada resources — such as the
+                            Alberta Health Services problem gambling program — alongside these in-platform tools for
+                            extra support.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Overall Value -->
+                <div id="8-overall-value-for-alberta-players" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                <path stroke-linecap="round" d="M12 11v5" />
+                                <circle cx="12" cy="8" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">8. Overall Value for Alberta Players</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>When evaluated against the other sportsbooks available to Alberta bettors, TonyBet stands
+                            out for its deep sports coverage, versatile Bet Builder, and reliable Interac payments.
+                            While it does not currently provide live video streaming for major North American
+                            leagues, its extensive match analytics, steady odds pricing, and strong international
+                            licensing make it a complete online sports betting destination.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Promotions</span>
+                        <p>TonyBet regularly features sportsbook promotions throughout the year, particularly around
+                            major sporting events. Depending on the season, players may find welcome offers, odds
+                            &amp; profit boosts, free bet promotions, NHL, NFL, and NBA offers, soccer betting
+                            promotions and Same Game Parlay bonuses.</p>
+                        <p>Before claiming any promotion, it's always recommended to review the terms and conditions,
+                            including any wagering requirements or eligibility restrictions.</p>
+                        <p>Overall, while the platform lacks live video streaming for major sports, its robust live
+                            betting engine, intuitive user interface, and trustworthy Interac/MuchBetter deposit and
+                            withdrawal framework make it a compelling option for Alberta bettors who understand and
+                            accept the offshore-licensing reality of the province's sports betting market.</p>
+                    </div>
+                </div>
+
+                <!-- Pros & Cons -->
+                <div id="pros-and-cons" class="aag-absrev-proscons">
+                    <div class="aag-absrev-card aag-absrev-pros">
+                        <div class="aag-absrev-sec-head">
+                            <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg></span>
+                            <h3 class="aag-absrev-pc-title aag-absrev-pros-text">Pros</h3>
+                        </div>
+                        <ul class="aag-absrev-pc-list">
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Internationally licensed (Kahnawake/Malta) sportsbook with
+                                    strong player protections.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>30+ sports categories with global market depth.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Intuitive Same Game Parlay engine for major sports.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Instant CAD deposits and fast withdrawals via
+                                    Interac.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>High-performing apps available on iOS and Android.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Full suite of deposit, session, and self-exclusion
+                                    tools.</span></li>
+                        </ul>
+                    </div>
+                    <div class="aag-absrev-card aag-absrev-cons">
+                        <div class="aag-absrev-sec-head">
+                            <span class="aag-absrev-sec-icon"
+                                style="background-color: rgba(220,38,38,0.15); color:#dc2626;"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                                    <path stroke-linecap="round" d="M12 9v4" />
+                                    <circle cx="12" cy="16.2" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                                </svg></span>
+                            <h3 class="aag-absrev-pc-title aag-absrev-cons-text">Cons</h3>
+                        </div>
+                        <ul class="aag-absrev-pc-list">
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>No made-for-Alberta provincial license — relies on offshore
+                                    regulation.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Some niche sports have fewer betting markets than major
+                                    leagues.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Withdrawal processing times depend on the selected payment
+                                    method.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Verdict -->
+                <div id="verdict" class="aag-absrev-card aag-absrev-verdict">
+                    <div class="aag-absrev-verdict-head">
+                        <span class="aag-absrev-verdict-icon"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10v5a5 5 0 01-10 0V4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 5.5H4.5a2 2 0 000 4H7M17 5.5h2.5a2 2 0 010 4H17" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14v3M9 20.5h6M9.5 20.5l.7-3.5h3.6l.7 3.5" />
+                            </svg></span>
+                        <div>
+                            <span class="aag-absrev-verdict-eyebrow">Our Verdict</span>
+                            <h3 class="aag-absrev-verdict-title">Bottom Line</h3>
+                        </div>
+                    </div>
+                    <p>After evaluating every key area in this TonyBet Alberta sportsbook review, it's clear that
+                        TonyBet provides a well-rounded, internationally licensed betting experience despite Alberta
+                        having no dedicated online sports betting regulator. From its extensive sports coverage and
+                        competitive odds to its sleek mobile performance and reliable Canadian banking options,
+                        TonyBet has established itself as a strong option for bettors across the province.</p>
+                    <p>Whether you are a newcomer seeking a straightforward platform or an experienced bettor looking
+                        for strong in-play markets and parlay options, TonyBet deserves serious consideration on your
+                        shortlist of sportsbooks available to Alberta players.</p>
+                    <p>If you're comparing different operators through online sports betting reviews, TonyBet
+                        deserves serious consideration. Its combination of respected international licensing,
+                        usability, betting variety, and mobile performance makes it one of the stronger sportsbook
+                        options available to Alberta bettors seeking a safe and entertaining online betting
+                        experience.</p>
+                    <p>Disclaimer: Must be 18+ (Alberta's legal minimum gambling age) and located in a Canadian
+                        province or territory where internationally licensed sportsbooks are accessible. Gambling
+                        should always be treated as entertainment, not a financial strategy. Play responsibly.</p>
+                    <a href="#" class="aag-absrev-cta">
+                        Visit Website
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sticky sidebar -->
+            <div class="aag-absrev-sidebar-col">
+                <div class="aag-absrev-sidebar-sticky">
+                    <div class="aag-absrev-sidebar">
+                        <span class="aag-absrev-rank-badge">#2 in Alberta</span>
+
+                        <div class="aag-absrev-logo-box">
+                            <img src="https://askaboutgaming.ca/wp-content/uploads/2026/09/21512-1.png"
+                                alt="TonyBet logo" />
+                        </div>
+
+                        <h3 class="aag-absrev-sb-name">TonyBet</h3>
+                        <p class="aag-absrev-sb-tagline">Global Betting Brand, Built for Canadian Bettors.</p>
+
+                        <a href="#" class="aag-absrev-sb-cta">Visit Website</a>
+                        <p class="aag-absrev-sb-disclaimer">18+ Play Responsibly</p>
+
+                        <div class="aag-absrev-sb-stats">
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3.5" y="4.5" width="17" height="15" rx="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.5 4.5v15M15.5 4.5v15" />
+                                            <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                            <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                        </svg></span>
+                                    <span>Sports Markets</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">25+</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Min. Deposit</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">$10</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="6" cy="18" r="1.4" fill="currentColor" stroke="none" />
+                                            <path stroke-linecap="round"
+                                                d="M6 13c3.9 0 7 3.1 7 7M6 8c6.6 0 12 5.4 12 12" />
+                                        </svg></span>
+                                    <span>Live Betting</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">Available</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                                        </svg></span>
+                                    <span>Payout Speed</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">1-3 days</span>
+                            </div>
+                        </div>
+
+                        <div class="aag-absrev-sb-payments">
+                            <span class="aag-absrev-sb-payments-label">Payment Methods</span>
+                            <div class="aag-absrev-payment-pills">
+                                <span class="aag-absrev-payment-pill">Interac</span>
+                                <span class="aag-absrev-payment-pill">Visa</span>
+                                <span class="aag-absrev-payment-pill">Mastercard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

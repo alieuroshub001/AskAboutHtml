@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerplay Full Review</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-absrev-toc,
+        .aag-absrev-section {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-toc *,
+        .aag-absrev-toc *::before,
+        .aag-absrev-toc *::after,
+        .aag-absrev-section *,
+        .aag-absrev-section *::before,
+        .aag-absrev-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* Sticky TOC */
+        .aag-absrev-toc {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            border-bottom: 1px solid #1e293b;
+            background: rgba(11, 17, 32, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .aag-absrev-toc-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .aag-absrev-toc-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .aag-absrev-toc-pill {
+            flex-shrink: 0;
+            white-space: nowrap;
+            border: 1px solid #1e293b;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-toc-pill:hover {
+            border-color: #dc2626;
+            color: #ffffff !important;
+        }
+
+        /* Section wrapper */
+        .aag-absrev-section {
+            background-color: #0b1120;
+            padding: 3rem 0 5rem;
+            color: #ffffff;
+        }
+
+        .aag-absrev-container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .aag-absrev-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-grid {
+                grid-template-columns: 1fr 320px;
+                gap: 2.5rem;
+            }
+        }
+
+        .aag-absrev-main {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            min-width: 0;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-main {
+                order: 1;
+            }
+        }
+
+        .aag-absrev-sidebar-col {
+            order: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-sidebar-col {
+                order: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-absrev-sidebar-sticky {
+                position: sticky;
+                top: 6rem;
+            }
+        }
+
+        /* Card */
+        .aag-absrev-card {
+            scroll-margin-top: 5rem;
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-card {
+                padding: 2rem;
+            }
+        }
+
+        .aag-absrev-card p {
+            color: #94a3b8 !important;
+            line-height: 1.625;
+            margin: 0 0 1rem 0;
+            font-size: 1rem !important;
+        }
+
+        .aag-absrev-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .aag-absrev-overview p.aag-absrev-lead {
+            font-size: 1.125rem !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .aag-absrev-features-title {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-features-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        /* Section heading with icon */
+        .aag-absrev-sec-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-absrev-sec-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-sec-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-absrev-sec-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-sec-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-sec-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Checklist */
+        .aag-absrev-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-absrev-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-check {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-check svg {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        /* Subheading pill */
+        .aag-absrev-subhead {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 9999px;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 1rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        .aag-absrev-subhead-dot {
+            width: 0.375rem;
+            height: 0.375rem;
+            border-radius: 9999px;
+            background-color: #dc2626;
+        }
+
+        /* Table */
+        .aag-absrev-table-wrap {
+            overflow-x: auto;
+            border-radius: 1rem;
+            border: 1px solid #1e293b;
+        }
+
+        .aag-absrev-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem !important;
+        }
+
+        .aag-absrev-table thead {
+            background-color: #111b2e;
+        }
+
+        .aag-absrev-table th {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-absrev-table td {
+            padding: 0.75rem 1rem;
+            color: #94a3b8 !important;
+            border-top: 1px solid #1e293b;
+            white-space: nowrap;
+        }
+
+        .aag-absrev-table tr.aag-absrev-table-verdict td {
+            background-color: rgba(220, 38, 38, 0.1);
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        /* Pros & Cons */
+        .aag-absrev-proscons {
+            scroll-margin-top: 5rem;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .aag-absrev-proscons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-absrev-pros {
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-cons {
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-pc-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-pc-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-pc-title.aag-absrev-pros-text {
+            color: #2563eb !important;
+        }
+
+        .aag-absrev-pc-title.aag-absrev-cons-text {
+            color: #dc2626 !important;
+        }
+
+        .aag-absrev-pc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+
+        .aag-absrev-pc-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #ffffff !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-absrev-pc-dot {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-pc-dot svg {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+
+        .aag-absrev-pc-dot.aag-absrev-pros-dot {
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+
+        .aag-absrev-pc-dot.aag-absrev-cons-dot {
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+        }
+
+        /* Verdict */
+        .aag-absrev-verdict {
+            border-color: rgba(220, 38, 38, 0.3);
+            background: linear-gradient(to bottom right, #111b2e, #0d1526);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-verdict {
+                padding: 2.5rem;
+            }
+        }
+
+        .aag-absrev-verdict-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-absrev-verdict-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-verdict-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-absrev-verdict-eyebrow {
+            display: block;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #dc2626 !important;
+        }
+
+        .aag-absrev-verdict-title {
+            margin: 0.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-verdict-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-absrev-cta {
+            margin-top: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 1rem 2rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-cta:hover {
+            background-color: #ef4444;
+            transform: scale(1.05);
+        }
+
+        .aag-absrev-cta svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-absrev-cta-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .aag-absrev-cta-center .aag-absrev-cta {
+            margin-top: 0;
+            width: 100%;
+            max-width: 16rem;
+            justify-content: center;
+        }
+
+        /* Sidebar */
+        .aag-absrev-sidebar {
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 640px) {
+            .aag-absrev-sidebar {
+                padding: 1.75rem;
+            }
+        }
+
+        .aag-absrev-rank-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            background-color: rgba(220, 38, 38, 0.15);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ef4444 !important;
+        }
+
+        .aag-absrev-logo-box {
+            margin: 1.25rem auto 0;
+            display: flex;
+            height: 5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-absrev-logo-box img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .aag-absrev-sb-name {
+            margin: 1.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+        }
+
+        .aag-absrev-sb-tagline {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.875rem !important;
+            line-height: 1.625;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-cta {
+            margin-top: 1.25rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 0.875rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-absrev-sb-cta:hover {
+            background-color: #ef4444;
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.25);
+        }
+
+        .aag-absrev-sb-disclaimer {
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+            font-size: 10px !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stats {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .aag-absrev-sb-stat-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .aag-absrev-sb-stat-label {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stat-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-absrev-sb-stat-icon svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-absrev-sb-stat-label span {
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-sb-stat-value {
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-absrev-sb-payments {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+        }
+
+        .aag-absrev-sb-payments-label {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-absrev-payment-pills {
+            margin-top: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .aag-absrev-payment-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Table of Contents -->
+    <section class="aag-absrev-toc">
+        <div class="aag-absrev-toc-inner">
+            <a href="#overview" class="aag-absrev-toc-pill">Overview</a>
+            <a href="#powerplay-alberta-sportsbook-at-a-glance" class="aag-absrev-toc-pill">Powerplay Alberta
+                Sportsbook at a Glance</a>
+            <a href="#1-is-powerplay-legal-in-alberta" class="aag-absrev-toc-pill">1. Is Powerplay Legal in
+                Alberta?</a>
+            <a href="#2-sports-coverage-odds-quality-and-same-game-parlays" class="aag-absrev-toc-pill">2. Sports
+                Coverage, Odds Quality &amp; Same Game Parlays</a>
+            <a href="#3-user-experience-ux-and-navigation" class="aag-absrev-toc-pill">3. User Experience (UX) &amp;
+                Navigation</a>
+            <a href="#4-banking-options-and-withdrawal-reliability" class="aag-absrev-toc-pill">4. Banking Options &amp;
+                Withdrawal Reliability</a>
+            <a href="#5-mobile-app-compatibility-and-performance" class="aag-absrev-toc-pill">5. Mobile App
+                Compatibility &amp; Performance</a>
+            <a href="#6-customer-support-accessibility" class="aag-absrev-toc-pill">6. Customer Support
+                Accessibility</a>
+            <a href="#7-responsible-gambling-tools" class="aag-absrev-toc-pill">7. Responsible Gambling Tools</a>
+            <a href="#8-overall-value-for-alberta-players" class="aag-absrev-toc-pill">8. Overall Value for Alberta
+                Players</a>
+            <a href="#pros-and-cons" class="aag-absrev-toc-pill">Pros &amp; Cons</a>
+            <a href="#verdict" class="aag-absrev-toc-pill">Verdict</a>
+        </div>
+    </section>
+
+    <!-- Review Content + Sidebar -->
+    <section class="aag-absrev-section">
+        <div class="aag-absrev-container">
+            <!-- View Website CTA -->
+            <div class="aag-absrev-cta-center">
+                <a href="#" class="aag-absrev-cta">
+                    View Website
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="aag-absrev-container aag-absrev-grid">
+
+            <!-- Main article column -->
+            <div class="aag-absrev-main">
+
+                <!-- Why Bettors Choose -->
+                <div class="aag-absrev-card">
+                    <h3 class="aag-absrev-features-title">Why Bettors Choose Powerplay</h3>
+                    <ul class="aag-absrev-list">
+                        <li class="aag-absrev-list-item">
+                            <span class="aag-absrev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Strong NHL &amp; CFL Coverage</span>
+                        </li>
+                        <li class="aag-absrev-list-item">
+                            <span class="aag-absrev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Interac-Friendly Banking</span>
+                        </li>
+                        <li class="aag-absrev-list-item">
+                            <span class="aag-absrev-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span>
+                            <span>Canadian-Based Customer Support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Overview -->
+                <div id="overview" class="aag-absrev-card aag-absrev-overview">
+                    <p class="aag-absrev-lead">If you're comparing sportsbooks built specifically with Canadian
+                        bettors in mind, Powerplay deserves a spot on your shortlist. Unlike many international
+                        sportsbooks that treat Canada as just one market among dozens, Powerplay is designed around
+                        the sports Canadians actually watch — NHL hockey and CFL football — along with
+                        Canadian-friendly banking like Interac e-Transfer.</p>
+                    <p>Alberta does not have a provincial regulator for online sports betting the way Ontario does
+                        through the Alcohol and Gaming Commission of Ontario (AGCO) and iGaming Ontario (iGO).
+                        Powerplay instead serves Alberta bettors through an internationally licensed, offshore-style
+                        platform, in the same way most sportsbooks operate across Canada outside Ontario.</p>
+                    <p>This review evaluates Powerplay's licensing, sports coverage, banking, mobile experience,
+                        customer support, responsible gambling tools, and overall value to help determine whether it
+                        deserves a place among the best sportsbooks available to Alberta bettors.</p>
+                </div>
+
+                <!-- Powerplay Alberta Sportsbook at a Glance -->
+                <div id="powerplay-alberta-sportsbook-at-a-glance" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">Powerplay Alberta Sportsbook at a Glance</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <div class="aag-absrev-table-wrap">
+                            <table class="aag-absrev-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Rating</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sports Markets</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Live Betting Engine</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Betting Odds &amp; Pricing</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile Experience</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Same Game Parlays</td>
+                                        <td>&#9733;&#9733;&#9733;&#9734;&#9734; (3.5/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Promotions &amp; Offers</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Responsible Gambling</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734; (4.5/5)</td>
+                                    </tr>
+                                    <tr class="aag-absrev-table-verdict">
+                                        <td>OVERALL VERDICT</td>
+                                        <td>8.6 / 10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1. Legal -->
+                <div id="1-is-powerplay-legal-in-alberta" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">1. Is Powerplay Legal in Alberta?</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Alberta does not currently license or regulate online sportsbooks the way Ontario does
+                            through the AGCO and iGaming Ontario. Powerplay operates under an internationally
+                            recognized gaming license, in the style of the Kahnawake Gaming Commission framework used
+                            by many Canadian-facing sportsbooks, which requires fund segregation, independently
+                            tested game fairness, and responsible gambling protections.</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Operator</strong> - Powerplay</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Governing Regulator</strong> - Offshore gaming license
+                                    (Kahnawake-style international licensing framework), since Alberta has no
+                                    dedicated provincial sports betting regulator</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Player Protection</strong> - Interac-based CAD banking,
+                                    encrypted transactions, identity verification (KYC), and independently tested odds
+                                    and game outcomes</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Eligibility</strong> - Must be 18+ (Alberta's legal
+                                    minimum gambling age) and located in a Canadian province where offshore-licensed
+                                    sportsbooks are accessible</span></li>
+                        </ul>
+                        <p>Because Powerplay operates under an offshore gaming license rather than a made-for-Alberta
+                            license, Alberta bettors should treat it the same way they would any other internationally
+                            licensed sportsbook: confirm the operator's current licensing status, read the terms of
+                            service, and use the platform's responsible gambling tools. Choosing a Canadian-focused,
+                            independently audited operator like Powerplay — with encrypted transactions and
+                            Interac-based CAD banking — gives Alberta players a reasonably secure way to bet online
+                            despite the lack of a made-for-Alberta regulatory body.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Sports Coverage -->
+                <div id="2-sports-coverage-odds-quality-and-same-game-parlays" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="2.5" y="6" width="19" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" stroke-dasharray="1.6 2" d="M12 6v12" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">2. Sports Coverage, Odds Quality &amp; Same Game Parlays</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Where many international sportsbooks spread their attention across dozens of countries,
+                            Powerplay is built with a much sharper focus on the sports Canadians — and Alberta bettors
+                            in particular — actually care about.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Covered Sports
+                            &amp; Leagues</span>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NHL &amp; Hockey:</strong> Deep puck line, alternate
+                                    line, and player prop coverage (shots on goal, anytime goalscorer,
+                                    points).</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>CFL &amp; NFL:</strong> Strong football coverage
+                                    including alternate lines and comprehensive prop markets.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NBA &amp; MLB:</strong> Solid secondary coverage of the
+                                    other major North American leagues.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Global Sports:</strong> Soccer, tennis, and UFC/MMA
+                                    round out the catalogue for bettors who follow more than North American
+                                    leagues.</span></li>
+                        </ul>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Extensive Betting
+                            Markets</span>
+                        <p>Powerplay covers moneyline, spreads, and totals across every sport it lists, with a
+                            particularly deep prop menu for NHL and CFL games — including puck lines, alternate
+                            totals, first goal scorer, and anytime touchdown scorer markets.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Live Betting
+                            &amp; Same Game Parlays (SGP)</span>
+                        <p>Powerplay's live betting engine covers the major North American leagues with dynamically
+                            updating odds during games. Its Same Game Parlay builder lets bettors combine game
+                            outcomes, totals, and player props from a single event into one ticket, though the range
+                            of combinable markets is somewhat narrower than what larger global sportsbooks offer.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Odds Pricing</span>
+                        <p>Odds pricing on NHL and CFL markets — Powerplay's specialty — is competitive with other
+                            Canadian-facing sportsbooks, though global market depth on niche international sports is
+                            narrower than what dedicated international operators can offer.</p>
+                    </div>
+                </div>
+
+                <!-- 3. UX -->
+                <div id="3-user-experience-ux-and-navigation" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3.5" y="3.5" width="7" height="7" rx="1.2" />
+                                <rect x="13.5" y="3.5" width="7" height="7" rx="1.2" />
+                                <rect x="3.5" y="13.5" width="7" height="7" rx="1.2" />
+                                <rect x="13.5" y="13.5" width="7" height="7" rx="1.2" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">3. User Experience (UX) &amp; Navigation</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Powerplay keeps its interface deliberately simple, favouring an uncluttered layout over the
+                            dense, feature-heavy design used by some larger international sportsbooks. Main sports sit
+                            along the left, featured games populate the center, and the bet slip is pinned to the
+                            right.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Navigation
+                            Highlights</span>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Straightforward Layout</strong> - A simplified menu
+                                    structure that's easy for newer bettors to pick up quickly.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NHL &amp; CFL Shortcuts</strong> - Quick-access tabs for
+                                    the leagues Powerplay is built around.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Quick Bet Slip Processing</strong> - Selections load
+                                    instantly, supporting single bets and multi-leg parlays.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. Banking -->
+                <div id="4-banking-options-and-withdrawal-reliability" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="6" width="18" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M3 10h18" />
+                                <path stroke-linecap="round" d="M6.5 14h3" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">4. Banking Options &amp; Withdrawal Reliability</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Powerplay was built around Canadian banking habits, so Interac e-Transfer is treated as the
+                            primary deposit and withdrawal method rather than an afterthought. All transactions
+                            process in Canadian Dollars (CAD).</p>
+                        <div class="aag-absrev-table-wrap">
+                            <table class="aag-absrev-table">
+                                <thead>
+                                    <tr>
+                                        <th>Payment Method</th>
+                                        <th>Deposit Speed</th>
+                                        <th>Withdrawal Speed</th>
+                                        <th>Minimum Deposit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Interac e-Transfer</td>
+                                        <td>Instant</td>
+                                        <td>24 – 48 Hours</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visa / Mastercard</td>
+                                        <td>Instant</td>
+                                        <td>N/A (Deposit Only)</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Online Banking</td>
+                                        <td>Instant</td>
+                                        <td>1 – 3 Days</td>
+                                        <td>$10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><strong>Pro Tip:</strong> Complete account identity verification (KYC) as soon as you sign
+                            up so your first Interac withdrawal isn't delayed by document checks.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Mobile -->
+                <div id="5-mobile-app-compatibility-and-performance" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="7" y="2.5" width="10" height="19" rx="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M11 19h2" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">5. Mobile App Compatibility &amp; Performance</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>With the majority of sports wagers in Alberta placed on smartphones, Powerplay offers a
+                            straightforward, responsive mobile site (and app, where available) that mirrors the
+                            desktop's uncomplicated layout.</p>
+                        <p>Core features carry over cleanly to mobile: full sportsbook access, live betting, deposits
+                            and withdrawals, bet history, account management, and responsible gambling settings.</p>
+                        <p>Navigation stays simple, pages load quickly, and placing a bet takes only a few taps —
+                            ideal for bettors who just want to get a bet down on tonight's game without extra
+                            clutter.</p>
+                    </div>
+                    <a href="#" class="aag-absrev-cta">
+                        Play On Mobile
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 6. Support -->
+                <div id="6-customer-support-accessibility" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v10H9l-4 4v-4H4V5z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">6. Customer Support Accessibility</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Powerplay's customer support team understands Canadian sports and Canadian banking, which
+                            comes through in how quickly and clearly they can resolve Interac or account
+                            questions.</p>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Live Chat</strong> - Available for quick answers on
+                                    account verification, deposits, and withdrawals.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Email Support</strong> - For more detailed requests or
+                                    document submissions.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Help Centre &amp; FAQ</strong> - Clear answers on rules,
+                                    payouts, and account settings, written with Canadian bettors in mind.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7. Responsible Gambling -->
+                <div id="7-responsible-gambling-tools" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">7. Responsible Gambling Tools</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Even though Alberta doesn't have its own online sports betting regulator, Powerplay
+                            provides a full toolkit of responsible gambling protections as a condition of its offshore
+                            gaming license.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Built-in Player
+                            Protection Tools:</span>
+                        <ul class="aag-absrev-list">
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Deposit &amp; Loss Limits</strong> - Set daily, weekly,
+                                    or monthly caps on your funding.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Session Time Limits</strong> - Manage screen time with
+                                    pop-up session alerts.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Cooling-Off Periods</strong> - Temporarily pause account
+                                    access for short periods.</span></li>
+                            <li class="aag-absrev-list-item"><span class="aag-absrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Self-Exclusion</strong> - Activate long-term
+                                    self-exclusion directly through account settings.</span></li>
+                        </ul>
+                        <p>Alberta bettors can also lean on independent, made-in-Canada resources — such as the
+                            Alberta Health Services problem gambling program — alongside these in-platform tools for
+                            extra support.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Overall Value -->
+                <div id="8-overall-value-for-alberta-players" class="aag-absrev-card">
+                    <div class="aag-absrev-sec-head">
+                        <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                <path stroke-linecap="round" d="M12 11v5" />
+                                <circle cx="12" cy="8" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                            </svg></span>
+                        <h3 class="aag-absrev-sec-title">8. Overall Value for Alberta Players</h3>
+                    </div>
+                    <div class="aag-absrev-sec-body">
+                        <p>Measured against larger global sportsbooks, Powerplay isn't trying to be everything to
+                            everyone — it's trying to be the best fit for Canadian bettors specifically, and for NHL
+                            and CFL fans in Alberta, that focus pays off. Interac-first banking, a Canadian-based
+                            support team, and a simple mobile experience make it a comfortable, low-friction option.</p>
+                        <span class="aag-absrev-subhead"><span class="aag-absrev-subhead-dot"></span>Promotions</span>
+                        <p>Powerplay runs seasonal promotions tied to NHL and CFL schedules, including welcome offers
+                            and free bet promotions. As with any sportsbook, review the terms and conditions before
+                            opting in.</p>
+                        <p>Overall, while Powerplay's global sports depth and Same Game Parlay options are narrower
+                            than bigger international competitors, its Canadian-first approach and reliable Interac
+                            banking make it a solid option for Alberta bettors who mainly follow domestic
+                            leagues.</p>
+                    </div>
+                </div>
+
+                <!-- Pros & Cons -->
+                <div id="pros-and-cons" class="aag-absrev-proscons">
+                    <div class="aag-absrev-card aag-absrev-pros">
+                        <div class="aag-absrev-sec-head">
+                            <span class="aag-absrev-sec-icon"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg></span>
+                            <h3 class="aag-absrev-pc-title aag-absrev-pros-text">Pros</h3>
+                        </div>
+                        <ul class="aag-absrev-pc-list">
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Built specifically for Canadian bettors with deep NHL &amp;
+                                    CFL coverage.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Interac-friendly, CAD-first banking.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Canadian-based customer support team.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Straightforward, easy-to-navigate mobile experience.</span>
+                            </li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-pros-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Solid responsible gambling toolkit.</span></li>
+                        </ul>
+                    </div>
+                    <div class="aag-absrev-card aag-absrev-cons">
+                        <div class="aag-absrev-sec-head">
+                            <span class="aag-absrev-sec-icon"
+                                style="background-color: rgba(220,38,38,0.15); color:#dc2626;"><svg
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                                    <path stroke-linecap="round" d="M12 9v4" />
+                                    <circle cx="12" cy="16.2" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                                </svg></span>
+                            <h3 class="aag-absrev-pc-title aag-absrev-cons-text">Cons</h3>
+                        </div>
+                        <ul class="aag-absrev-pc-list">
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>No made-for-Alberta provincial license — relies on offshore
+                                    regulation.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Narrower global sports market depth than larger international
+                                    sportsbooks.</span></li>
+                            <li><span class="aag-absrev-pc-dot aag-absrev-cons-dot"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Same Game Parlay options are more limited than bigger
+                                    competitors.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Verdict -->
+                <div id="verdict" class="aag-absrev-card aag-absrev-verdict">
+                    <div class="aag-absrev-verdict-head">
+                        <span class="aag-absrev-verdict-icon"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10v5a5 5 0 01-10 0V4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 5.5H4.5a2 2 0 000 4H7M17 5.5h2.5a2 2 0 010 4H17" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14v3M9 20.5h6M9.5 20.5l.7-3.5h3.6l.7 3.5" />
+                            </svg></span>
+                        <div>
+                            <span class="aag-absrev-verdict-eyebrow">Our Verdict</span>
+                            <h3 class="aag-absrev-verdict-title">Bottom Line</h3>
+                        </div>
+                    </div>
+                    <p>After evaluating every key area in this Powerplay Alberta sportsbook review, it's clear that
+                        Powerplay's biggest strength is focus: rather than trying to compete on global sports depth,
+                        it leans into NHL and CFL coverage and Canadian-friendly Interac banking, serving Alberta
+                        bettors through the same kind of internationally licensed platform used across most of Canada
+                        outside Ontario.</p>
+                    <p>For bettors who mostly wager on hockey and football and want a simple, no-frills mobile
+                        experience backed by a Canadian-based support team, Powerplay is a comfortable fit.</p>
+                    <p>If you're comparing operators through online sports betting reviews and want a book that feels
+                        built for Canadians rather than adapted for them, Powerplay deserves serious consideration
+                        among the sportsbooks available to Alberta bettors.</p>
+                    <p>Disclaimer: Must be 18+ (Alberta's legal minimum gambling age) and located in a Canadian
+                        province or territory where internationally licensed sportsbooks are accessible. Gambling
+                        should always be treated as entertainment, not a financial strategy. Play responsibly.</p>
+                    <a href="#" class="aag-absrev-cta">
+                        Visit Website
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sticky sidebar -->
+            <div class="aag-absrev-sidebar-col">
+                <div class="aag-absrev-sidebar-sticky">
+                    <div class="aag-absrev-sidebar">
+                        <span class="aag-absrev-rank-badge">#3 in Alberta</span>
+
+                        <div class="aag-absrev-logo-box">
+                            <img src="https://ask-about-gaming.vercel.app/images/sport-betting-brands/powerplay.webp"
+                                alt="Powerplay logo" />
+                        </div>
+
+                        <h3 class="aag-absrev-sb-name">Powerplay</h3>
+                        <p class="aag-absrev-sb-tagline">Canadian-Built Sportsbook, Focused on NHL &amp; CFL.</p>
+
+                        <a href="#" class="aag-absrev-sb-cta">Visit Website</a>
+                        <p class="aag-absrev-sb-disclaimer">18+ Play Responsibly</p>
+
+                        <div class="aag-absrev-sb-stats">
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3.5" y="4.5" width="17" height="15" rx="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.5 4.5v15M15.5 4.5v15" />
+                                            <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                            <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                        </svg></span>
+                                    <span>Sports Markets</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">15+</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Min. Deposit</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">$10</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="6" cy="18" r="1.4" fill="currentColor" stroke="none" />
+                                            <path stroke-linecap="round"
+                                                d="M6 13c3.9 0 7 3.1 7 7M6 8c6.6 0 12 5.4 12 12" />
+                                        </svg></span>
+                                    <span>Live Betting</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">Available</span>
+                            </div>
+                            <div class="aag-absrev-sb-stat-row">
+                                <span class="aag-absrev-sb-stat-label">
+                                    <span class="aag-absrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                                        </svg></span>
+                                    <span>Payout Speed</span>
+                                </span>
+                                <span class="aag-absrev-sb-stat-value">1-3 days</span>
+                            </div>
+                        </div>
+
+                        <div class="aag-absrev-sb-payments">
+                            <span class="aag-absrev-sb-payments-label">Payment Methods</span>
+                            <div class="aag-absrev-payment-pills">
+                                <span class="aag-absrev-payment-pill">Interac</span>
+                                <span class="aag-absrev-payment-pill">Visa</span>
+                                <span class="aag-absrev-payment-pill">Mastercard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
