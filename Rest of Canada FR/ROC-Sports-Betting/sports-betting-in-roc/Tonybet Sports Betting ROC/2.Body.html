@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TonyBet Full Review</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-rbsrev-toc,
+        .aag-rbsrev-section {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        .aag-rbsrev-toc *,
+        .aag-rbsrev-toc *::before,
+        .aag-rbsrev-toc *::after,
+        .aag-rbsrev-section *,
+        .aag-rbsrev-section *::before,
+        .aag-rbsrev-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* Sticky TOC */
+        .aag-rbsrev-toc {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            border-bottom: 1px solid #1e293b;
+            background: rgba(11, 17, 32, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .aag-rbsrev-toc-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .aag-rbsrev-toc-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .aag-rbsrev-toc-pill {
+            flex-shrink: 0;
+            white-space: nowrap;
+            border: 1px solid #1e293b;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .aag-rbsrev-toc-pill:hover {
+            border-color: #dc2626;
+            color: #ffffff !important;
+        }
+
+        /* Section wrapper */
+        .aag-rbsrev-section {
+            background-color: #0b1120;
+            padding: 3rem 0 5rem;
+            color: #ffffff;
+        }
+
+        .aag-rbsrev-container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .aag-rbsrev-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rbsrev-grid {
+                grid-template-columns: 1fr 320px;
+                gap: 2.5rem;
+            }
+        }
+
+        .aag-rbsrev-main {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            min-width: 0;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rbsrev-main {
+                order: 1;
+            }
+        }
+
+        .aag-rbsrev-sidebar-col {
+            order: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rbsrev-sidebar-col {
+                order: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rbsrev-sidebar-sticky {
+                position: sticky;
+                top: 6rem;
+            }
+        }
+
+        /* Card */
+        .aag-rbsrev-card {
+            scroll-margin-top: 5rem;
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+        }
+
+        .aag-rbsrev-proscons {
+            scroll-margin-top: 5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-card {
+                padding: 2rem;
+            }
+        }
+
+        .aag-rbsrev-card p {
+            color: #94a3b8 !important;
+            line-height: 1.625;
+            margin: 0 0 1rem 0;
+            font-size: 1rem !important;
+        }
+
+        .aag-rbsrev-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .aag-rbsrev-overview p.aag-rbsrev-lead {
+            font-size: 1.125rem !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .aag-rbsrev-features-title {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-features-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        /* Section heading with icon */
+        .aag-rbsrev-sec-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-rbsrev-sec-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rbsrev-sec-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-rbsrev-sec-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-sec-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-rbsrev-sec-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Checklist */
+        .aag-rbsrev-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-rbsrev-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-rbsrev-check {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rbsrev-check svg {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        /* Subheading pill */
+        .aag-rbsrev-subhead {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 9999px;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 1rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        .aag-rbsrev-subhead-dot {
+            width: 0.375rem;
+            height: 0.375rem;
+            border-radius: 9999px;
+            background-color: #dc2626;
+        }
+
+        /* Pros & Cons */
+        .aag-rbsrev-proscons {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .aag-rbsrev-proscons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-rbsrev-pros {
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-rbsrev-cons {
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-rbsrev-pc-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-pc-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-rbsrev-pc-title.aag-rbsrev-pros-text {
+            color: #2563eb !important;
+        }
+
+        .aag-rbsrev-pc-title.aag-rbsrev-cons-text {
+            color: #dc2626 !important;
+        }
+
+        .aag-rbsrev-pc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+
+        .aag-rbsrev-pc-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #ffffff !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-rbsrev-pc-dot {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rbsrev-pc-dot svg {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+
+        .aag-rbsrev-pc-dot.aag-rbsrev-pros-dot {
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+
+        .aag-rbsrev-pc-dot.aag-rbsrev-cons-dot {
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+        }
+
+        /* Verdict */
+        .aag-rbsrev-verdict {
+            border-color: rgba(220, 38, 38, 0.3);
+            background: linear-gradient(to bottom right, #111b2e, #0d1526);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-verdict {
+                padding: 2.5rem;
+            }
+        }
+
+        .aag-rbsrev-verdict-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-rbsrev-verdict-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rbsrev-verdict-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-rbsrev-verdict-eyebrow {
+            display: block;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #dc2626 !important;
+        }
+
+        .aag-rbsrev-verdict-title {
+            margin: 0.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-verdict-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-rbsrev-cta {
+            margin-top: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 1rem 2rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-rbsrev-cta:hover {
+            background-color: #ef4444;
+            transform: scale(1.05);
+        }
+
+        .aag-rbsrev-cta svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-rbsrev-cta-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .aag-rbsrev-cta-center .aag-rbsrev-cta {
+            margin-top: 0;
+            width: 100%;
+            max-width: 16rem;
+            justify-content: center;
+        }
+
+        /* Sidebar */
+        .aag-rbsrev-sidebar {
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 640px) {
+            .aag-rbsrev-sidebar {
+                padding: 1.75rem;
+            }
+        }
+
+        .aag-rbsrev-rank-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            background-color: rgba(220, 38, 38, 0.15);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ef4444 !important;
+        }
+
+        .aag-rbsrev-logo-box {
+            margin: 1.25rem auto 0;
+            display: flex;
+            height: 5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-rbsrev-logo-box img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .aag-rbsrev-sb-name {
+            margin: 1.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+        }
+
+        .aag-rbsrev-sb-name.aag-rbsrev-sb-name-large {
+            font-size: 1.875rem !important;
+        }
+
+        .aag-rbsrev-sb-tagline {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.875rem !important;
+            line-height: 1.625;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rbsrev-sb-cta {
+            margin-top: 1.25rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 0.875rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-rbsrev-sb-cta:hover {
+            background-color: #ef4444;
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.25);
+        }
+
+        .aag-rbsrev-sb-disclaimer {
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+            font-size: 10px !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rbsrev-sb-stats {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .aag-rbsrev-sb-stat-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .aag-rbsrev-sb-stat-label {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rbsrev-sb-stat-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rbsrev-sb-stat-icon svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-rbsrev-sb-stat-label span {
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rbsrev-sb-stat-value {
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-rbsrev-sb-payments {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+        }
+
+        .aag-rbsrev-sb-payments-label {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rbsrev-payment-pills {
+            margin-top: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .aag-rbsrev-payment-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Table of Contents -->
+    <section class="aag-rbsrev-toc">
+        <div class="aag-rbsrev-toc-inner">
+            <a href="#overview" class="aag-rbsrev-toc-pill">Aperçu</a>
+            <a href="#is-tonybet-legal-in-the-rest-of-canada" class="aag-rbsrev-toc-pill">TonyBet est-il légal dans le
+                Reste du Canada?</a>
+            <a href="#sports-coverage-odds-quality" class="aag-rbsrev-toc-pill">Couverture Sportive et Qualité des
+                Cotes</a>
+            <a href="#live-betting-same-game-parlays" class="aag-rbsrev-toc-pill">Paris en Direct et Paris Combinés
+                sur un Même Match</a>
+            <a href="#banking-deposits-withdrawals" class="aag-rbsrev-toc-pill">Transactions: Dépôts et Retraits</a>
+            <a href="#customer-support-mobile-experience" class="aag-rbsrev-toc-pill">Service Client et Expérience
+                Mobile</a>
+            <a href="#pros-and-cons" class="aag-rbsrev-toc-pill">Avantages et Inconvénients</a>
+            <a href="#verdict" class="aag-rbsrev-toc-pill">Verdict</a>
+        </div>
+    </section>
+
+    <!-- Review Content + Sidebar -->
+    <section class="aag-rbsrev-section">
+        <div class="aag-rbsrev-container">
+            <!-- View Website CTA -->
+            <div class="aag-rbsrev-cta-center">
+                <a href="#" class="aag-rbsrev-cta">
+                    Voir le Site Web
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="aag-rbsrev-container aag-rbsrev-grid">
+
+            <!-- Main article column -->
+            <div class="aag-rbsrev-main">
+
+                <!-- Why Players Choose -->
+                <div class="aag-rbsrev-card">
+                    <h3 class="aag-rbsrev-features-title">Pourquoi les Joueurs Choisissent TonyBet</h3>
+                    <ul class="aag-rbsrev-list">
+                        <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Large couverture des marchés sportifs</span></li>
+                        <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Cotes compétitives</span></li>
+                        <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Retraits rapides</span></li>
+                    </ul>
+                </div>
+
+                <!-- Overview -->
+                <div id="overview" class="aag-rbsrev-card aag-rbsrev-overview">
+                    <p class="aag-rbsrev-lead">Pour les parieurs sportifs en Colombie-Britannique, en Alberta, au
+                        Québec et dans le reste du Canada, trouver un site de paris sportifs fiable offrant une
+                        couverture approfondie des sports nord-américains est essentiel. <strong>TonyBet</strong> est
+                        l'une des meilleures options pour les parieurs canadiens en dehors de l'Ontario.
+                    </p>
+                    <p>Dans cet avis détaillé sur TonyBet Canada, nous couvrons tout, des marchés de paris sur la LNH
+                        au moteur de paris en direct, aux options bancaires, et pourquoi il se distingue auprès des
+                        amateurs de sport canadiens.</p>
+                </div>
+
+                <!-- Is TonyBet Legal in the Rest of Canada? -->
+                <div id="is-tonybet-legal-in-the-rest-of-canada" class="aag-rbsrev-card">
+                    <div class="aag-rbsrev-sec-head">
+                        <span class="aag-rbsrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-rbsrev-sec-title">TonyBet est-il légal dans le Reste du Canada?</h3>
+                    </div>
+                    <div class="aag-rbsrev-sec-body">
+                        <p>Oui, TonyBet accepte légalement les joueurs de partout au Canada, sauf en Ontario, qui
+                            dispose de son propre cadre réglementé et localisé.</p>
+                        <p>En opérant sous des juridictions internationales reconnues (comme Kahnawake ou Malte),
+                            TonyBet garantit des cotes équitables, des transactions sécurisées et un environnement de
+                            paris sûr.</p>
+                    </div>
+                </div>
+
+                <!-- Sports Coverage & Odds Quality -->
+                <div id="sports-coverage-odds-quality" class="aag-rbsrev-card">
+                    <div class="aag-rbsrev-sec-head">
+                        <span class="aag-rbsrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                            </svg></span>
+                        <h3 class="aag-rbsrev-sec-title">Couverture Sportive et Qualité des Cotes</h3>
+                    </div>
+                    <div class="aag-rbsrev-sec-body">
+                        <p>TonyBet offre une couverture étendue des sports qui comptent le plus pour les
+                            Canadiens.</p>
+                        <ul class="aag-rbsrev-list">
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>LNH et Hockey :</strong> Grande variété de lignes de
+                                    buts, de paris sur la performance des joueurs (tirs au but, buteur à tout moment)
+                                    et de paris à long terme.</span></li>
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NFL et LCF :</strong> Couverture approfondie pour les
+                                    amateurs de football, incluant des lignes alternatives et des marchés de paris
+                                    complets.</span></li>
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>NBA et Basketball :</strong> Paris en direct étendus et
+                                    fonctionnalités de paris combinés sur un même match.</span></li>
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span><strong>Sports Internationaux :</strong> Soccer (Premier
+                                    League, MLS), Tennis, UFC, Golf et sports électroniques.</span></li>
+                        </ul>
+                        <p>La tarification des cotes est constamment compétitive par rapport aux autres grands sites
+                            de paris sportifs internationaux offerts au Canada.</p>
+                    </div>
+                </div>
+
+                <!-- Live Betting & Same Game Parlays -->
+                <div id="live-betting-same-game-parlays" class="aag-rbsrev-card">
+                    <div class="aag-rbsrev-sec-head">
+                        <span class="aag-rbsrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                <path stroke-linecap="round" d="M12 11v5" />
+                                <circle cx="12" cy="8" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                            </svg></span>
+                        <h3 class="aag-rbsrev-sec-title">Paris en Direct et Paris Combinés sur un Même Match</h3>
+                    </div>
+                    <div class="aag-rbsrev-sec-body">
+                        <p>Le moteur de paris en direct de TonyBet est très réactif, permettant aux parieurs de placer
+                            des mises pendant que l'action se déroule sur la glace ou sur le terrain, sans délais
+                            frustrants.</p>
+                        <p>De plus, leur outil de création de paris combinés sur un même match (SGP) est excellent,
+                            vous permettant de combiner lignes de mise, totaux et paris sur la performance des joueurs
+                            en un seul pari pour des gains potentiels plus élevés.</p>
+                    </div>
+                </div>
+
+                <!-- Banking: Deposits & Withdrawals -->
+                <div id="banking-deposits-withdrawals" class="aag-rbsrev-card">
+                    <div class="aag-rbsrev-sec-head">
+                        <span class="aag-rbsrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="6" width="18" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M3 10h18" />
+                                <path stroke-linecap="round" d="M6.5 14h3" />
+                            </svg></span>
+                        <h3 class="aag-rbsrev-sec-title">Transactions: Dépôts et Retraits</h3>
+                    </div>
+                    <div class="aag-rbsrev-sec-body">
+                        <p>En tant que site de paris sportifs adapté aux Canadiens, TonyBet traite les transactions en
+                            CAD, ce qui signifie aucuns frais de conversion de devise.</p>
+                        <ul class="aag-rbsrev-list">
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Virement Interac (fortement recommandé pour sa rapidité et sa
+                                    fiabilité)</span></li>
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Visa et Mastercard</span></li>
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Instadebit et iDebit</span></li>
+                            <li class="aag-rbsrev-list-item"><span class="aag-rbsrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>MuchBetter et autres portefeuilles électroniques</span></li>
+                        </ul>
+                        <p>Les délais de paiement sont standards pour l'industrie, les retraits par Interac étant
+                            généralement traités entre 24 et 48 heures.</p>
+                    </div>
+                </div>
+
+                <!-- Customer Support & Mobile Experience -->
+                <div id="customer-support-mobile-experience" class="aag-rbsrev-card">
+                    <div class="aag-rbsrev-sec-head">
+                        <span class="aag-rbsrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="7" y="2.5" width="10" height="19" rx="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M11 19h2" />
+                            </svg></span>
+                        <h3 class="aag-rbsrev-sec-title">Service Client et Expérience Mobile</h3>
+                    </div>
+                    <div class="aag-rbsrev-sec-body">
+                        <p>Que vous utilisiez une application dédiée ou le site web optimisé pour mobile, placer des
+                            paris en déplacement est simple et fluide. L'interface est claire et permet une
+                            navigation rapide vers les événements en direct.</p>
+                        <p>Si vous avez besoin d'aide, le service client est disponible 24 heures sur 24, 7 jours sur
+                            7 par clavardage en direct et par courriel pour vous aider avec le règlement des paris, la
+                            vérification de compte ou les questions bancaires.</p>
+                    </div>
+                    <a href="#" class="aag-rbsrev-cta">
+                        Jouer sur Mobile
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Pros & Cons -->
+                <div id="pros-and-cons" class="aag-rbsrev-proscons">
+                    <div class="aag-rbsrev-card aag-rbsrev-pros">
+                        <div class="aag-rbsrev-sec-head">
+                            <span class="aag-rbsrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg></span>
+                            <h3 class="aag-rbsrev-pc-title aag-rbsrev-pros-text">Avantages</h3>
+                        </div>
+                        <ul class="aag-rbsrev-pc-list">
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Excellente couverture des marchés de la LNH et de la LCF</span></li>
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Prend en charge le CAD et le virement Interac</span></li>
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Paris en direct robustes et paris combinés sur un même
+                                    match</span></li>
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Bonis compétitifs pour les joueurs hors de l'Ontario</span></li>
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Offert dans la plupart des provinces canadiennes</span></li>
+                        </ul>
+                    </div>
+                    <div class="aag-rbsrev-card aag-rbsrev-cons">
+                        <div class="aag-rbsrev-sec-head">
+                            <span class="aag-rbsrev-sec-icon"
+                                style="background-color: rgba(220,38,38,0.15); color:#dc2626;"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                                    <path stroke-linecap="round" d="M12 9v4" />
+                                    <circle cx="12" cy="16.2" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                                </svg></span>
+                            <h3 class="aag-rbsrev-pc-title aag-rbsrev-cons-text">Inconvénients</h3>
+                        </div>
+                        <ul class="aag-rbsrev-pc-list">
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Les résidents de l'Ontario doivent utiliser la plateforme
+                                    spécifique réglementée en Ontario (le cas échéant)</span></li>
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Certains sports de niche manquent de marchés de paris sur la
+                                    performance des joueurs approfondis</span></li>
+                            <li><span class="aag-rbsrev-pc-dot aag-rbsrev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Les délais du service client peuvent varier lors des
+                                    événements achalandés</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Verdict -->
+                <div id="verdict" class="aag-rbsrev-card aag-rbsrev-verdict">
+                    <div class="aag-rbsrev-verdict-head">
+                        <span class="aag-rbsrev-verdict-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10v5a5 5 0 01-10 0V4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 5.5H4.5a2 2 0 000 4H7M17 5.5h2.5a2 2 0 010 4H17" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14v3M9 20.5h6M9.5 20.5l.7-3.5h3.6l.7 3.5" />
+                            </svg></span>
+                        <div>
+                            <span class="aag-rbsrev-verdict-eyebrow">Notre Verdict</span>
+                            <h3 class="aag-rbsrev-verdict-title">Verdict Final</h3>
+                        </div>
+                    </div>
+                    <p>Pour les parieurs sportifs du Reste du Canada, <strong>TonyBet</strong> offre une plateforme de
+                        paris de premier plan, sûre et très fonctionnelle. Son accent marqué sur les sports
+                        nord-américains — en particulier le hockey et le football — en fait un choix naturel pour les
+                        Canadiens.</p>
+                    <p>Combiné à des options bancaires pratiques comme Interac et à une interface de paris en direct
+                        performante, TonyBet est vivement recommandé pour quiconque souhaite parier sur des sports en
+                        dehors de l'Ontario.</p>
+                    <a href="#" class="aag-rbsrev-cta">
+                        Visiter le Site Web
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sticky sidebar -->
+            <div class="aag-rbsrev-sidebar-col">
+                <div class="aag-rbsrev-sidebar-sticky">
+                    <div class="aag-rbsrev-sidebar">
+                        <span class="aag-rbsrev-rank-badge">#2 dans le Reste du Canada</span>
+
+                        <h3 class="aag-rbsrev-sb-name aag-rbsrev-sb-name-large">TonyBet</h3>
+                        <p class="aag-rbsrev-sb-tagline">Une marque de paris mondiale, conçue pour les parieurs
+                            canadiens.</p>
+
+                        <a href="#" class="aag-rbsrev-sb-cta">Visiter le Site Web</a>
+                        <p class="aag-rbsrev-sb-disclaimer">19+ Jouez de façon responsable</p>
+
+                        <div class="aag-rbsrev-sb-stats">
+                            <div class="aag-rbsrev-sb-stat-row">
+                                <span class="aag-rbsrev-sb-stat-label">
+                                    <span class="aag-rbsrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Marchés Sportifs</span>
+                                </span>
+                                <span class="aag-rbsrev-sb-stat-value">25+</span>
+                            </div>
+                            <div class="aag-rbsrev-sb-stat-row">
+                                <span class="aag-rbsrev-sb-stat-label">
+                                    <span class="aag-rbsrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Dépôt Min.</span>
+                                </span>
+                                <span class="aag-rbsrev-sb-stat-value">$10</span>
+                            </div>
+                            <div class="aag-rbsrev-sb-stat-row">
+                                <span class="aag-rbsrev-sb-stat-label">
+                                    <span class="aag-rbsrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M10.3 9.3l4.4 2.7-4.4 2.7V9.3z" fill="currentColor" stroke="none" />
+                                        </svg></span>
+                                    <span>Paris en Direct</span>
+                                </span>
+                                <span class="aag-rbsrev-sb-stat-value">Disponible</span>
+                            </div>
+                            <div class="aag-rbsrev-sb-stat-row">
+                                <span class="aag-rbsrev-sb-stat-label">
+                                    <span class="aag-rbsrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                                        </svg></span>
+                                    <span>Vitesse de Paiement</span>
+                                </span>
+                                <span class="aag-rbsrev-sb-stat-value">1-3 jours</span>
+                            </div>
+                        </div>
+
+                        <div class="aag-rbsrev-sb-payments">
+                            <span class="aag-rbsrev-sb-payments-label">Méthodes de Paiement</span>
+                            <div class="aag-rbsrev-payment-pills">
+                                <span class="aag-rbsrev-payment-pill">Interac</span>
+                                <span class="aag-rbsrev-payment-pill">Visa</span>
+                                <span class="aag-rbsrev-payment-pill">Mastercard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
