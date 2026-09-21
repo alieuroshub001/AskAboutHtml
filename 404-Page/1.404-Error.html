@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+
+    <!-- Fonts ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-404-section {
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            display: flex;
+            min-height: 80vh;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 7rem 1.5rem 4rem;
+            box-sizing: border-box;
+            line-height: 1.5;
+            background: linear-gradient(to bottom, #0b1120, #111b2e, #0d1526);
+            text-align: center;
+        }
+
+        .aag-404-section *,
+        .aag-404-section *::before,
+        .aag-404-section *::after {
+            box-sizing: border-box;
+        }
+
+        .aag-404-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40rem;
+            height: 40rem;
+            transform: translate(-50%, -50%);
+            background-color: rgba(220, 38, 38, 0.15);
+            filter: blur(140px);
+            z-index: 0;
+        }
+
+        .aag-404-content {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 40rem;
+            margin: 0 auto;
+        }
+
+        .aag-404-code {
+            font-size: 6rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #dc2626 !important;
+            margin: 0;
+            line-height: 1;
+        }
+
+        @media (min-width: 768px) {
+            .aag-404-code {
+                font-size: 8rem !important;
+            }
+        }
+
+        .aag-404-title {
+            font-size: 1.75rem !important;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+            margin: 1rem 0 0.75rem;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 768px) {
+            .aag-404-title {
+                font-size: 2.25rem !important;
+            }
+        }
+
+        .aag-404-text {
+            font-size: 1rem !important;
+            font-weight: 400;
+            color: #94a3b8 !important;
+            margin: 0 auto 2.5rem;
+            max-width: 30rem;
+        }
+
+        .aag-404-btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-404-btn-group {
+                flex-direction: row;
+            }
+        }
+
+        .aag-404-btn-group a,
+        .aag-404-btn-group button {
+            text-decoration: none;
+            border-radius: 0.5rem;
+            padding: 0.75rem 2rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .aag-404-btn-primary {
+            background-color: #dc2626;
+            color: #ffffff !important;
+            border: 1px solid #dc2626;
+        }
+
+        .aag-404-btn-primary:hover {
+            background-color: #ef4444;
+            border-color: #ef4444;
+            transform: scale(1.05);
+            color: #ffffff !important;
+        }
+
+        .aag-404-btn-secondary {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff !important;
+            background-color: transparent;
+        }
+
+        .aag-404-btn-secondary:hover {
+            border-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="aag-404-section">
+        <div class="aag-404-glow"></div>
+
+        <div class="aag-404-content">
+            <p class="aag-404-code">404</p>
+            <h1 class="aag-404-title">Oops! Page Not Found</h1>
+            <p class="aag-404-text">The page you're looking for doesn't exist or may have been moved.</p>
+
+            <div class="aag-404-btn-group">
+                <a href="/" class="aag-404-btn-primary">Go to Homepage</a>
+                <button type="button" class="aag-404-btn-secondary" onclick="history.back()">Back to Previous Page</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
