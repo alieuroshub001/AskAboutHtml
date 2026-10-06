@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonybet Avis complet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .aag-rccrev-toc,
+        .aag-rccrev-section {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        .aag-rccrev-toc *,
+        .aag-rccrev-toc *::before,
+        .aag-rccrev-toc *::after,
+        .aag-rccrev-section *,
+        .aag-rccrev-section *::before,
+        .aag-rccrev-section *::after {
+            box-sizing: border-box;
+        }
+
+        /* Sticky TOC */
+        .aag-rccrev-toc {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            border-bottom: 1px solid #1e293b;
+            background: rgba(11, 17, 32, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .aag-rccrev-toc-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .aag-rccrev-toc-inner::-webkit-scrollbar {
+            display: none;
+        }
+
+        .aag-rccrev-toc-pill {
+            flex-shrink: 0;
+            white-space: nowrap;
+            border: 1px solid #1e293b;
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .aag-rccrev-toc-pill:hover {
+            border-color: #dc2626;
+            color: #ffffff !important;
+        }
+
+        /* Section wrapper */
+        .aag-rccrev-section {
+            background-color: #0b1120;
+            padding: 3rem 0 5rem;
+            color: #ffffff;
+        }
+
+        .aag-rccrev-container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .aag-rccrev-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rccrev-grid {
+                grid-template-columns: 1fr 320px;
+                gap: 2.5rem;
+            }
+        }
+
+        .aag-rccrev-main {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            min-width: 0;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rccrev-main {
+                order: 1;
+            }
+        }
+
+        .aag-rccrev-sidebar-col {
+            order: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rccrev-sidebar-col {
+                order: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .aag-rccrev-sidebar-sticky {
+                position: sticky;
+                top: 6rem;
+            }
+        }
+
+        /* Card */
+        .aag-rccrev-card {
+            scroll-margin-top: 5rem;
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+        }
+
+        .aag-rccrev-proscons {
+            scroll-margin-top: 5rem;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-card {
+                padding: 2rem;
+            }
+        }
+
+        .aag-rccrev-card p {
+            color: #94a3b8 !important;
+            line-height: 1.625;
+            margin: 0 0 1rem 0;
+            font-size: 1rem !important;
+        }
+
+        .aag-rccrev-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .aag-rccrev-overview p.aag-rccrev-lead {
+            font-size: 1.125rem !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .aag-rccrev-features-title {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-features-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        /* Section heading with icon */
+        .aag-rccrev-sec-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-rccrev-sec-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rccrev-sec-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-rccrev-sec-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-sec-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-rccrev-sec-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Checklist */
+        .aag-rccrev-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-rccrev-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-rccrev-check {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rccrev-check svg {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        /* Subheading pill */
+        .aag-rccrev-subhead {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 9999px;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 1rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        .aag-rccrev-subhead-dot {
+            width: 0.375rem;
+            height: 0.375rem;
+            border-radius: 9999px;
+            background-color: #dc2626;
+        }
+
+        /* Pros & Cons */
+        .aag-rccrev-proscons {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .aag-rccrev-proscons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .aag-rccrev-pros {
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-rccrev-cons {
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-rccrev-pc-title {
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-pc-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-rccrev-pc-title.aag-rccrev-pros-text {
+            color: #2563eb !important;
+        }
+
+        .aag-rccrev-pc-title.aag-rccrev-cons-text {
+            color: #dc2626 !important;
+        }
+
+        .aag-rccrev-pc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+
+        .aag-rccrev-pc-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #ffffff !important;
+            font-size: 1rem !important;
+            line-height: 1.5;
+        }
+
+        .aag-rccrev-pc-dot {
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rccrev-pc-dot svg {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+
+        .aag-rccrev-pc-dot.aag-rccrev-pros-dot {
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+
+        .aag-rccrev-pc-dot.aag-rccrev-cons-dot {
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+        }
+
+        /* Verdict */
+        .aag-rccrev-verdict {
+            border-color: rgba(220, 38, 38, 0.3);
+            background: linear-gradient(to bottom right, #111b2e, #0d1526);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-verdict {
+                padding: 2.5rem;
+            }
+        }
+
+        .aag-rccrev-verdict-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .aag-rccrev-verdict-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background-color: rgba(220, 38, 38, 0.15);
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rccrev-verdict-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .aag-rccrev-verdict-eyebrow {
+            display: block;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #dc2626 !important;
+        }
+
+        .aag-rccrev-verdict-title {
+            margin: 0.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-verdict-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .aag-rccrev-cta {
+            margin-top: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 1rem 2rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-rccrev-cta:hover {
+            background-color: #ef4444;
+            transform: scale(1.05);
+        }
+
+        .aag-rccrev-cta svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-rccrev-cta-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .aag-rccrev-cta-center .aag-rccrev-cta {
+            margin-top: 0;
+            width: 100%;
+            max-width: 16rem;
+            justify-content: center;
+        }
+
+        /* Sidebar */
+        .aag-rccrev-sidebar {
+            border-radius: 1.5rem;
+            border: 1px solid #1e293b;
+            background-color: #0d1526;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 640px) {
+            .aag-rccrev-sidebar {
+                padding: 1.75rem;
+            }
+        }
+
+        .aag-rccrev-rank-badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            background-color: rgba(220, 38, 38, 0.15);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ef4444 !important;
+        }
+
+        .aag-rccrev-logo-box {
+            margin: 1.25rem auto 0;
+            display: flex;
+            height: 5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .aag-rccrev-logo-box img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .aag-rccrev-sb-name {
+            margin: 1.25rem 0 0 0;
+            font-size: 1.25rem !important;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            color: #ffffff !important;
+        }
+
+        .aag-rccrev-sb-name.aag-rccrev-sb-name-large {
+            font-size: 1.875rem !important;
+        }
+
+        .aag-rccrev-sb-tagline {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.875rem !important;
+            line-height: 1.625;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rccrev-sb-cta {
+            margin-top: 1.25rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            background-color: #dc2626;
+            padding: 0.875rem;
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .aag-rccrev-sb-cta:hover {
+            background-color: #ef4444;
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.25);
+        }
+
+        .aag-rccrev-sb-disclaimer {
+            margin: 0.5rem 0 0 0;
+            text-align: center;
+            font-size: 10px !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rccrev-sb-stats {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .aag-rccrev-sb-stat-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .aag-rccrev-sb-stat-label {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rccrev-sb-stat-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aag-rccrev-sb-stat-icon svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .aag-rccrev-sb-stat-label span {
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rccrev-sb-stat-value {
+            font-size: 0.875rem !important;
+            font-weight: 700;
+            color: #ffffff !important;
+            white-space: nowrap;
+        }
+
+        .aag-rccrev-sb-payments {
+            margin-top: 1.5rem;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+        }
+
+        .aag-rccrev-sb-payments-label {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8 !important;
+        }
+
+        .aag-rccrev-payment-pills {
+            margin-top: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .aag-rccrev-payment-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 0.5rem;
+            border: 1px solid #1e293b;
+            background-color: #111b2e;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem !important;
+            font-weight: 500;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Table of Contents -->
+    <section class="aag-rccrev-toc">
+        <div class="aag-rccrev-toc-inner">
+            <a href="#overview" class="aag-rccrev-toc-pill">Aperçu</a>
+            <a href="#is-tonybet-legal-in-the-rest-of-canada" class="aag-rccrev-toc-pill">TonyBet est-il légal dans le
+                reste du Canada ?</a>
+            <a href="#tonybet-welcome-bonus-promotions" class="aag-rccrev-toc-pill">Bonus de bienvenue et promotions
+                TonyBet</a>
+            <a href="#casino-game-selection-at-tonybet" class="aag-rccrev-toc-pill">Sélection de jeux de casino chez
+                TonyBet</a>
+            <a href="#banking-deposits-withdrawals-in-canada" class="aag-rccrev-toc-pill">Paiements : dépôts et
+                retraits au Canada</a>
+            <a href="#mobile-gaming-experience" class="aag-rccrev-toc-pill">Expérience de jeu sur mobile</a>
+            <a href="#customer-support-responsible-gaming" class="aag-rccrev-toc-pill">Service à la clientèle et jeu
+                responsable</a>
+            <a href="#pros-and-cons" class="aag-rccrev-toc-pill">Avantages et inconvénients</a>
+            <a href="#verdict" class="aag-rccrev-toc-pill">Verdict</a>
+        </div>
+    </section>
+
+    <!-- Review Content + Sidebar -->
+    <section class="aag-rccrev-section">
+        <div class="aag-rccrev-container">
+            <!-- View Website CTA -->
+            <div class="aag-rccrev-cta-center">
+                <a href="https://track.askaboutgaming.ca/click" target="_blank" rel="noopener noreferrer"
+                    class="aag-rccrev-cta">
+                    Voir le site Web
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="aag-rccrev-container aag-rccrev-grid">
+
+            <!-- Main article column -->
+            <div class="aag-rccrev-main">
+
+                <!-- Why Players Choose -->
+                <div class="aag-rccrev-card">
+                    <h3 class="aag-rccrev-features-title">Avis sur TonyBet Casino Canada 2026 : bonus, jeux, VIP et
+                        paiements</h3>
+                    <ul class="aag-rccrev-list">
+                        <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Vaste sélection de marchés sportifs</span></li>
+                        <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Cotes concurrentielles</span></li>
+                        <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg></span><span>Paiements rapides</span></li>
+                    </ul>
+                </div>
+
+                <!-- Overview -->
+                <div id="overview" class="aag-rccrev-card aag-rccrev-overview">
+                    <p class="aag-rccrev-lead"> <Strong>TonyBet Casino</Strong> est devenu un nom de plus en plus
+                        reconnu parmi les joueurs de casino en ligne au Canada, combinant une vaste sélection de jeux
+                        de casino avec un service complet de paris sportifs, le tout sous un même compte. Pour les
+                        joueurs à l'extérieur de l'Ontario, TonyBet propose une plateforme destinée au marché canadien
+                        avec un vaste choix de machines à sous, de jeux de casino en direct, de jeux de table, de
+                        promotions, de récompenses VIP et plusieurs options de paiement adaptées aux joueurs
+                        canadiens.</p>
+                    <p>L'opérateur est particulièrement intéressant pour les joueurs qui souhaitent avoir accès aux
+                        <Strong>jeux de casino et aux paris sportifs</Strong> avec un seul compte plutôt que de gérer
+                        des comptes distincts auprès de différents opérateurs. Le service de TonyBet destiné au marché
+                        canadien est distinct de sa plateforme réglementée en Ontario, ce qui signifie que les bonus,
+                        les jeux, les méthodes de paiement et les autres fonctionnalités peuvent varier selon votre
+                        province de résidence.
+                    <p>Dans cet <Strong>avis sur TonyBet Casino, nous examinons les principales caractéristiques pour
+                            les joueurs canadiens, notamment le bonus de bienvenue TonyBet, les jeux de casino, le
+                            programme VIP, les méthodes de paiement, les dépôts, les retraits, l'expérience mobile et
+                            la valeur globale de la plateforme.</Strong>
+                    <p><strong>Important :</strong> Cet avis porte sur le service de TonyBet destiné aux joueurs
+                        canadiens à l'extérieur de l'Ontario. La disponibilité peut varier d'une province à l'autre.
+                        Les joueurs en Alberta et dans les autres provinces devraient confirmer leur admissibilité
+                        ainsi que les conditions promotionnelles en vigueur avant de s'inscrire ou d'effectuer un
+                        dépôt.</p>
+                </div>
+
+                <!-- Is TonyBet Legal in the Rest of Canada? -->
+                <div id="is-tonybet-legal-in-the-rest-of-canada" class="aag-rccrev-card">
+                    <div class="aag-rccrev-sec-head">
+                        <span class="aag-rccrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg></span>
+                        <h3 class="aag-rccrev-sec-title">TonyBet est-il légal dans le reste du Canada ?</h3>
+                    </div>
+                    <div class="aag-rccrev-sec-body">
+                        <p>Oui, TonyBet est légalement accessible aux joueurs canadiens à l'extérieur de l'Ontario.
+                            Contrairement à la réglementation stricte et localisée de l'AGCO et d'iGO en Ontario, le
+                            reste du Canada s'appuie largement sur des organismes de réglementation internationaux
+                            comme la Malta Gaming Authority (MGA) ou la Kahnawake Gaming Commission.
+                        </p>
+                        <p>Jouer auprès d'un opérateur titulaire d'une licence internationale comme TonyBet offre
+                            néanmoins certaines protections importantes aux joueurs, notamment :</p>
+                        <ul class="aag-rccrev-list">
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Méthodes de paiement sécurisées comme Interac</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Jeux faisant l'objet d'audits indépendants pour vérifier leur
+                                    équité</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Protocoles de chiffrement des données</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Outils et fonctionnalités favorisant le jeu
+                                    responsable</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TonyBet Welcome Bonus & Promotions -->
+                <div id="tonybet-welcome-bonus-promotions" class="aag-rccrev-card">
+                    <div class="aag-rccrev-sec-head">
+                        <span class="aag-rccrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="4" y="9.5" width="16" height="10.5" rx="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 9.5h16M12 9.5v10.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 9.5c-1.66 0-3-1.12-3-2.75S6.34 4 8 4c1.66 0 4 2.5 4 5.5m0 0c0-3 2.34-5.5 4-5.5 1.66 0 3 1.12 3 2.75S17.66 9.5 16 9.5" />
+                            </svg></span>
+                        <h3 class="aag-rccrev-sec-title">Bonus de bienvenue et promotions TonyBet</h3>
+                    </div>
+                    <div class="aag-rccrev-sec-body">
+                        <p>L'un des principaux avantages pour les joueurs du reste du Canada est l'accès à des bonus
+                            de bienvenue concurrentiels qui sont souvent plus limités en Ontario en raison de la
+                            réglementation locale en matière de publicité.</p>
+                        <p>TonyBet propose généralement des promotions intéressantes aux nouveaux joueurs canadiens,
+                            qui peuvent notamment comprendre :</p>
+                        <ul class="aag-rccrev-list">
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Bonus de dépôt avec remise en pourcentage</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Tours gratuits sur certaines machines à sous
+                                    populaires</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Bonus de rechargement pour les joueurs existants</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Récompenses VIP et avantages de fidélité</span></li>
+                        </ul>
+                        <p>Lisez toujours les conditions générales propres à chaque promotion, puisque des exigences
+                            de mise et des pondérations différentes peuvent s'appliquer selon les jeux.</p>
+                    </div>
+                </div>
+
+                <!-- Casino Game Selection at TonyBet -->
+                <div id="casino-game-selection-at-tonybet" class="aag-rccrev-card">
+                    <div class="aag-rccrev-sec-head">
+                        <span class="aag-rccrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                <path stroke-linecap="round" d="M12 11v5" />
+                                <circle cx="12" cy="8" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                            </svg></span>
+                        <h3 class="aag-rccrev-sec-title">Sélection de jeux de casino chez TonyBet</h3>
+                    </div>
+                    <div class="aag-rccrev-sec-body">
+                        <p>Les joueurs de partout au Canada recherchent une bibliothèque de jeux diversifiée, et
+                            TonyBet propose des milliers de titres provenant de fournisseurs de logiciels de premier
+                            plan.</p>
+                        <span class="aag-rccrev-subhead"><span class="aag-rccrev-subhead-dot"></span>Machines à sous
+                            en ligne</span>
+                        <p>La sélection de machines à sous est très vaste et comprend notamment :</p>
+                        <ul class="aag-rccrev-list">
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Machines à sous Megaways et jeux à forte volatilité</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Jackpots progressifs offrant des gains potentiels
+                                    importants</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Machines à sous classiques à 3 rouleaux pour les amateurs de
+                                    jeux traditionnels</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Fonctionnalités d'achat de bonus</span></li>
+                        </ul>
+                        <span class="aag-rccrev-subhead"><span class="aag-rccrev-subhead-dot"></span>Jeux de table et
+                            casino en direct</span>
+                        <p>Pour les joueurs qui préfèrent la stratégie, TonyBet propose des dizaines de variantes de
+                            Blackjack, de Roulette, de Baccarat et de Poker.</p>
+                        <p>La section Casino en direct offre une expérience très immersive, avec des croupiers
+                            professionnels diffusés en HD pour permettre de jouer en temps réel.</p>
+                    </div>
+                </div>
+
+                <!-- Banking: Deposits & Withdrawals in Canada -->
+                <div id="banking-deposits-withdrawals-in-canada" class="aag-rccrev-card">
+                    <div class="aag-rccrev-sec-head">
+                        <span class="aag-rccrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="6" width="18" height="12" rx="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M3 10h18" />
+                                <path stroke-linecap="round" d="M6.5 14h3" />
+                            </svg></span>
+                        <h3 class="aag-rccrev-sec-title">Paiements : dépôts et retraits au Canada</h3>
+                    </div>
+                    <div class="aag-rccrev-sec-body">
+                        <p>Des options bancaires simples et efficaces sont essentielles pour les joueurs canadiens.
+                            TonyBet prend en charge les dollars canadiens (CAD) et propose plusieurs méthodes de
+                            paiement privilégiées au Canada.</p>
+                        <ul class="aag-rccrev-list">
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Virement électronique Interac (l'option la plus rapide pour les
+                                    Canadiens)</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Visa et Mastercard</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Portefeuilles électroniques comme MuchBetter et
+                                    ecoPayz</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Virements bancaires</span></li>
+                            <li class="aag-rccrev-list-item"><span class="aag-rccrev-check"><svg viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Cryptomonnaies (selon les options actuellement
+                                    disponibles)</span></li>
+                        </ul>
+                        <p>Les délais de retrait sont concurrentiels, les retraits par Interac et les portefeuilles
+                            électroniques étant souvent traités dans un délai de 24 à 48 heures.</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Gaming Experience -->
+                <div id="mobile-gaming-experience" class="aag-rccrev-card">
+                    <div class="aag-rccrev-sec-head">
+                        <span class="aag-rccrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="7" y="2.5" width="10" height="19" rx="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path stroke-linecap="round" d="M11 19h2" />
+                            </svg></span>
+                        <h3 class="aag-rccrev-sec-title">Expérience de jeu sur mobile</h3>
+                    </div>
+                    <div class="aag-rccrev-sec-body">
+                        <p>Que vous utilisiez un appareil iOS ou Android, TonyBet offre une expérience mobile
+                            optimisée. La plupart des jeux fonctionnent directement dans votre navigateur mobile sans
+                            qu'il soit nécessaire de télécharger une application dédiée, ce qui vous permet de jouer
+                            pratiquement partout au Canada.</p>
+                    </div>
+                    <a href="https://track.askaboutgaming.ca/click" target="_blank" rel="noopener noreferrer"
+                        class="aag-rccrev-cta">
+                        Jouer sur mobile
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Customer Support & Responsible Gaming -->
+                <div id="customer-support-responsible-gaming" class="aag-rccrev-card">
+                    <div class="aag-rccrev-sec-head">
+                        <span class="aag-rccrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v10H9l-4 4v-4H4V5z" />
+                            </svg></span>
+                        <h3 class="aag-rccrev-sec-title">Service à la clientèle et jeu responsable</h3>
+                    </div>
+                    <div class="aag-rccrev-sec-body">
+                        <p>TonyBet offre un service à la clientèle 24 h sur 24, 7 jours sur 7 par clavardage en direct
+                            et par courriel afin d'aider les joueurs partout au Canada, peu importe leur fuseau
+                            horaire.</p>
+                        <p>L'opérateur propose également des outils complets de jeu responsable permettant notamment
+                            aux joueurs de fixer des limites de dépôt, de prendre des périodes de pause ou de
+                            s'auto-exclure au besoin.</p>
+                    </div>
+                </div>
+
+                <!-- Pros & Cons -->
+                <div id="pros-and-cons" class="aag-rccrev-proscons">
+                    <div class="aag-rccrev-card aag-rccrev-pros">
+                        <div class="aag-rccrev-sec-head">
+                            <span class="aag-rccrev-sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg></span>
+                            <h3 class="aag-rccrev-pc-title aag-rccrev-pros-text">Avantages</h3>
+                        </div>
+                        <ul class="aag-rccrev-pc-list">
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Accessible aux joueurs partout dans le reste du
+                                    Canada</span></li>
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Accepte les dollars canadiens et les virements électroniques
+                                    Interac</span></li>
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Vaste sélection de machines à sous et de jeux avec croupiers en
+                                    direct</span></li>
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Bonus de bienvenue concurrentiels</span></li>
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-pros-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg></span><span>Interface adaptée aux appareils mobiles</span></li>
+                        </ul>
+                    </div>
+                    <div class="aag-rccrev-card aag-rccrev-cons">
+                        <div class="aag-rccrev-sec-head">
+                            <span class="aag-rccrev-sec-icon"
+                                style="background-color: rgba(220,38,38,0.15); color:#dc2626;"><svg viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                                    <path stroke-linecap="round" d="M12 9v4" />
+                                    <circle cx="12" cy="16.2" r="0.1" stroke-width="2.5" stroke-linecap="round" />
+                                </svg></span>
+                            <h3 class="aag-rccrev-pc-title aag-rccrev-cons-text">Inconvénients</h3>
+                        </div>
+                        <ul class="aag-rccrev-pc-list">
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Non disponible pour les résidents de l'Ontario (en raison de la
+                                    réglementation distincte)</span></li>
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Les délais de retrait varient selon la méthode de
+                                    paiement</span></li>
+                            <li><span class="aag-rccrev-pc-dot aag-rccrev-cons-dot"><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg></span><span>Des exigences de mise s'appliquent aux bonus</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Verdict -->
+                <div id="verdict" class="aag-rccrev-card aag-rccrev-verdict">
+                    <div class="aag-rccrev-verdict-head">
+                        <span class="aag-rccrev-verdict-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10v5a5 5 0 01-10 0V4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 5.5H4.5a2 2 0 000 4H7M17 5.5h2.5a2 2 0 010 4H17" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14v3M9 20.5h6M9.5 20.5l.7-3.5h3.6l.7 3.5" />
+                            </svg></span>
+                        <div>
+                            <span class="aag-rccrev-verdict-eyebrow">Notre verdict</span>
+                            <h3 class="aag-rccrev-verdict-title">Verdict final : devriez-vous jouer chez TonyBet ?</h3>
+                        </div>
+                    </div>
+                    <p>Pour les joueurs qui résident en Colombie-Britannique, en Alberta, au Québec et dans les autres
+                        provinces à l'extérieur de l'Ontario, <strong>TonyBet</strong> représente une excellente
+                        option de casino en ligne.</p>
+                    <p>Avec sa grande variété de jeux, ses options de paiement locales comme Interac et ses offres
+                        promotionnelles intéressantes, TonyBet répond aux besoins de la plupart des amateurs de
+                        casino au Canada.</p>
+                    <p>Si vous recherchez un casino fiable, titulaire d'une licence internationale et proposant un
+                        catalogue de jeux de premier ordre, TonyBet mérite certainement votre attention.</p>
+                    <a href="https://track.askaboutgaming.ca/click" target="_blank" rel="noopener noreferrer"
+                        class="aag-rccrev-cta">
+                        Visiter le site Web
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sticky sidebar -->
+            <div class="aag-rccrev-sidebar-col">
+                <div class="aag-rccrev-sidebar-sticky">
+                    <div class="aag-rccrev-sidebar">
+                        <span class="aag-rccrev-rank-badge">No 2 dans le reste du Canada</span>
+                        <div class="aag-rccrev-logo-box">
+                            <img src="https://askaboutgaming.ca/wp-content/uploads/2026/09/21512-1.png" />
+                        </div>
+
+                        <h3 class="aag-rccrev-sb-name aag-rccrev-sb-name-large">Tonybet</h3>
+                        <p class="aag-rccrev-sb-tagline">Une marque mondiale de paris sportifs conçue pour les
+                            parieurs canadiens.</p>
+
+                        <a href="https://track.askaboutgaming.ca/click" target="_blank" rel="noopener noreferrer"
+                            class="aag-rccrev-sb-cta">Visiter le site Web</a>
+                        <p class="aag-rccrev-sb-disclaimer">19+ Jouez de manière responsable</p>
+
+                        <div class="aag-rccrev-sb-stats">
+                            <div class="aag-rccrev-sb-stat-row">
+                                <span class="aag-rccrev-sb-stat-label">
+                                    <span class="aag-rccrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3.5" y="4.5" width="17" height="15" rx="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.5 4.5v15M15.5 4.5v15" />
+                                            <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                            <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none" />
+                                        </svg></span>
+                                    <span>Jeux de casino</span>
+                                </span>
+                                <span class="aag-rccrev-sb-stat-value">3 000+</span>
+                            </div>
+                            <div class="aag-rccrev-sb-stat-row">
+                                <span class="aag-rccrev-sb-stat-label">
+                                    <span class="aag-rccrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="12" cy="12" r="8.5" stroke-linecap="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 8v8M9.7 9.5c0-1 1-1.7 2.3-1.7s2.3.6 2.3 1.5c0 2-4.6 1.3-4.6 3.5 0 .9 1 1.7 2.3 1.7s2.3-.7 2.3-1.7" />
+                                        </svg></span>
+                                    <span>Dépôt minimum</span>
+                                </span>
+                                <span class="aag-rccrev-sb-stat-value">10 $</span>
+                            </div>
+                            <div class="aag-rccrev-sb-stat-row">
+                                <span class="aag-rccrev-sb-stat-label">
+                                    <span class="aag-rccrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3.5" y="7.5" width="12" height="14" rx="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.5 3.5l9.5 3.2-4.4 13.3" />
+                                            <circle cx="9.5" cy="13.5" r="1.3" stroke-linecap="round" />
+                                        </svg></span>
+                                    <span>Jeux de Blackjack</span>
+                                </span>
+                                <span class="aag-rccrev-sb-stat-value">20+</span>
+                            </div>
+                            <div class="aag-rccrev-sb-stat-row">
+                                <span class="aag-rccrev-sb-stat-label">
+                                    <span class="aag-rccrev-sb-stat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13 3L5 14h6l-1 7 8-11h-6l1-7z" />
+                                        </svg></span>
+                                    <span>Délai de paiement</span>
+                                </span>
+                                <span class="aag-rccrev-sb-stat-value">1 à 3 jours</span>
+                            </div>
+                        </div>
+
+                        <div class="aag-rccrev-sb-payments">
+                            <span class="aag-rccrev-sb-payments-label">Méthodes de paiement</span>
+                            <div class="aag-rccrev-payment-pills">
+                                <span class="aag-rccrev-payment-pill">Interac</span>
+                                <span class="aag-rccrev-payment-pill">Visa</span>
+                                <span class="aag-rccrev-payment-pill">Mastercard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
